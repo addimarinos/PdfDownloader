@@ -4,3 +4,6 @@ version = "0.1.0"
 edition = "2024"
 
 [dependencies]
+async_downloader = "0.1.0"
+excelstream = "0.20.2"
+office = "0.8.1"

@@ -1,1 +1,0 @@
-C:\Users\Arnar\ Marinosonn\Documents\pdfDownloader\PdfDownloader\pdf_downloader\target\debug\pdf_downloader.exe: C:\Users\Arnar\ Marinosonn\Documents\pdfDownloader\PdfDownloader\pdf_downloader\src\main.rs C:\Users\Arnar\ Marinosonn\Documents\pdfDownloader\PdfDownloader\pdf_downloader\src\my_struct.rs
