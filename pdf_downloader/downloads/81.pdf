@@ -1,0 +1,2468 @@
+
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+<!--   
+                  server:   prd-cw-cd-eu 
+                  instance: Prod.CD
+                  site:     BdfCorporateWebsiteInternational 
+                  language: en 
+                  id:       {240FE3AB-CC0D-D368-999B-ADB7C0795BD8}
+                  template: Home
+                  version:  171
+                -->
+<head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="/dist/bdfcw/favicon.ico" type="image/ico">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+<script>
+    (function(){try{
+    if(window.__gtgHealthBlocker&&window.__gtgHealthBlocker.installed){return;}
+    function isHealthRequest(url){
+    try{
+    var raw=typeof url==='string'?url:String(url==null?'':url);
+    if(!raw||raw.indexOf('gtg_health')===-1){return false;}
+    var parsed=new URL(raw,document.baseURI||'https://localhost/');
+    var host=parsed.hostname.toLowerCase();
+    if(host!=='googletagmanager.com'&&!host.endsWith('.googletagmanager.com')){return false;}
+    return parsed.searchParams.has('gtg_health');
+    }catch(e){return false;}
+    }
+    var state={installed:false,blocked:0,errorsDispatched:0,isHealthRequest:isHealthRequest};
+    window.__gtgHealthBlocker=state;
+    var srcDescriptor=Object.getOwnPropertyDescriptor(HTMLScriptElement.prototype,'src');
+    if(!srcDescriptor||!srcDescriptor.get||!srcDescriptor.set){return;}
+    var nativeSetAttribute=Element.prototype.setAttribute;
+    var previousCreateElement=document.createElement;
+    function neutralize(el){
+    state.blocked++;
+    setTimeout(function(){try{if(el.isConnected){state.errorsDispatched++;el.dispatchEvent(new Event('error'));}}catch(e){}},0);
+    }
+    function guard(el){
+    Object.defineProperty(el,'src',{configurable:true,enumerable:false,
+    get:function(){return srcDescriptor.get.call(this);},
+    set:function(value){if(isHealthRequest(value)){neutralize(this);return;}srcDescriptor.set.call(this,value);}});
+    Object.defineProperty(el,'setAttribute',{configurable:true,enumerable:false,writable:true,
+    value:function(name,value){
+    if(String(name).toLowerCase()==='src'&&isHealthRequest(value)){neutralize(this);return;}
+    return nativeSetAttribute.apply(this,arguments);
+    }});
+    }
+    document.createElement=function(tagName){
+    var el=previousCreateElement.apply(this,arguments);
+    try{if(typeof tagName==='string'&&tagName.length===6&&tagName.toLowerCase()==='script'){guard(el);}}catch(e){}
+    return el;
+    };
+    state.installed=true;
+    }catch(e){}})();
+</script>
+
+    <script type="text/javascript">
+        var metaTag = document.querySelector("meta[name=viewport]");
+        if (window.innerWidth >= 768) {
+            var ratio = window.innerWidth / 1440;
+            if (ratio > 1.0) {
+                ratio = 1.0;
+            }
+            metaTag.setAttribute('content', 'width=1440, initial-scale=' + ratio);
+        }
+    </script>
+
+        <link rel="stylesheet" href="/dist/uikit/css/uikit.min.css?202508191712" />
+        <link rel="stylesheet" href="/dist/bdfcw/styles-ltr.css?202604270919" />
+
+
+    <title>Beiersdorf – The inventors of modern skin care</title><meta name="keywords" content="Skin care, skin care company, Brands, NIVEA, NIVEA MEN, Eucerin, La Prairie, Labello, Hansaplast, Innovations, Consumer, Consumers needs"><meta name="description" content="We are Beiersdorf, the inventors of modern skin care. Since 1882, we have made people feel good in their skin."><meta name="msvalidate.01" content="2CB14D67A4121AA97B69B238DA7310CE"><meta property="og:title" content="Beiersdorf – The inventors of modern skin care"><meta property="og:description" content="We are Beiersdorf, the inventors of modern skin care. Since 1882, we have made people feel good in their skin."><meta property="og:url" content="https://www.beiersdorf.com/"><meta property="og:type" content="website"><meta property="og:locale" content="en_US"><meta property="og:image" content="/~/media/asset-silo/4/8/4/3c86f3183f854bf9ae04f485120a748d-jpg_3840x3840_scaled_q100_300dpi.jpg">
+    <script type="text/javascript" data-cmp-ab="1">window.cmp_customlanguages = [{"l":"DE-AT","i":"at","r":0,"t":""},{"l":"FR-BE","i":"be","r":0,"t":"FR"},{"l":"NL-BE","i":"be","r":0,"t":"NL"},{"l":"EN-GB","i":"gb","r":0,"t":"EN"},{"l":"FR-CH","i":"ch","r":0,"t":"FR-ch"},{"l":"DE-CH","i":"ch","r":0,"t":"DE"},{"l":"EN-IE","i":"ir","r":0,"t":"EN"},{"l":"DE-SW","i":"de","r":0,"t":"DE"},{"l":"DE-DE","i":"de","r":0,"t":"DE"},{"l":"TH-TH","i":"th","r":0,"t":"TH"},{"l":"PT-BR","i":"br","r":0,"t":"PT"},{"l":"EN-SW","i":"en","r":0,"t":"EN"},{"l":"DE-APP","i":"de","r":0,"t":"DE-app"}];</script>
+<script>if(!("gdprAppliesGlobally" in window)){window.gdprAppliesGlobally=true}if(!("cmp_id" in window)||window.cmp_id<1){window.cmp_id=0}if(!("cmp_cdid" in window)){window.cmp_cdid="6dff26cb8166"}if(!("cmp_params" in window)){window.cmp_params=""}if(!("cmp_host" in window)){window.cmp_host="a.delivery.consentmanager.net"}if(!("cmp_cdn" in window)){window.cmp_cdn="cdn.consentmanager.net"}if(!("cmp_proto" in window)){window.cmp_proto="https:"}if(!("cmp_codesrc" in window)){window.cmp_codesrc="1"}window.cmp_getsupportedLangs=function(){var b=["DE","EN","FR","IT","NO","DA","FI","ES","PT","RO","BG","ET","EL","GA","HR","LV","LT","MT","NL","PL","SV","SK","SL","CS","HU","RU","SR","ZH","TR","UK","AR","BS"];if("cmp_customlanguages" in window){for(var a=0;a<window.cmp_customlanguages.length;a++){b.push(window.cmp_customlanguages[a].l.toUpperCase())}}return b};window.cmp_getRTLLangs=function(){var a=["AR"];if("cmp_customlanguages" in window){for(var b=0;b<window.cmp_customlanguages.length;b++){if("r" in window.cmp_customlanguages[b]&&window.cmp_customlanguages[b].r){a.push(window.cmp_customlanguages[b].l)}}}return a};window.cmp_getlang=function(a){if(typeof(a)!="boolean"){a=true}if(a&&typeof(cmp_getlang.usedlang)=="string"&&cmp_getlang.usedlang!==""){return cmp_getlang.usedlang}return window.cmp_getlangs()[0]};window.cmp_extractlang=function(a){if(a.indexOf("cmplang=")!=-1){a=a.substr(a.indexOf("cmplang=")+8,2).toUpperCase();if(a.indexOf("&")!=-1){a=a.substr(0,a.indexOf("&"))}}else{a=""}return a};window.cmp_getlangs=function(){var g=window.cmp_getsupportedLangs();var c=[];var f=location.hash;var e=location.search;var j="cmp_params" in window?window.cmp_params:"";var a="languages" in navigator?navigator.languages:[];if(cmp_extractlang(f)!=""){c.push(cmp_extractlang(f))}else{if(cmp_extractlang(e)!=""){c.push(cmp_extractlang(e))}else{if(cmp_extractlang(j)!=""){c.push(cmp_extractlang(j))}else{if("cmp_setlang" in window&&window.cmp_setlang!=""){c.push(window.cmp_setlang.toUpperCase())}else{if("cmp_langdetect" in window&&window.cmp_langdetect==1){c.push(window.cmp_getPageLang())}else{if(a.length>0){for(var d=0;d<a.length;d++){c.push(a[d])}}if("language" in navigator){c.push(navigator.language)}if("userLanguage" in navigator){c.push(navigator.userLanguage)}}}}}}var h=[];for(var d=0;d<c.length;d++){var b=c[d].toUpperCase();if(b.length<2){continue}if(g.indexOf(b)!=-1){h.push(b)}else{if(b.indexOf("-")!=-1){b=b.substr(0,2)}if(g.indexOf(b)!=-1){h.push(b)}}}if(h.length==0&&typeof(cmp_getlang.defaultlang)=="string"&&cmp_getlang.defaultlang!==""){return[cmp_getlang.defaultlang.toUpperCase()]}else{return h.length>0?h:["EN"]}};window.cmp_getPageLangs=function(){var a=window.cmp_getXMLLang();if(a!=""){a=[a.toUpperCase()]}else{a=[]}a=a.concat(window.cmp_getLangsFromURL());return a.length>0?a:["EN"]};window.cmp_getPageLang=function(){var a=window.cmp_getPageLangs();return a.length>0?a[0]:""};window.cmp_getLangsFromURL=function(){var c=window.cmp_getsupportedLangs();var b=location;var m="toUpperCase";var g=b.hostname[m]()+".";var a=b.pathname[m]()+"/";var f=[];for(var e=0;e<c.length;e++){var j=a.substring(0,c[e].length+1);if(g.substring(0,c[e].length+1)==c[e]+"."){f.push(c[e][m]())}else{if(c[e].length==5){var k=c[e].substring(3,5)+"-"+c[e].substring(0,2);if(g.substring(0,k.length+1)==k+"."){f.push(c[e][m]())}}else{if(j==c[e]+"/"||j=="/"+c[e]){f.push(c[e][m]())}else{if(j==c[e].replace("-","/")+"/"||j=="/"+c[e].replace("-","/")){f.push(c[e][m]())}else{if(c[e].length==5){var k=c[e].substring(3,5)+"-"+c[e].substring(0,2);var h=a.substring(0,k.length+1);if(h==k+"/"||h==k.replace("-","/")+"/"){f.push(c[e][m]())}}}}}}}return f};window.cmp_getXMLLang=function(){var c=document.getElementsByTagName("html");if(c.length>0){var c=c[0]}else{c=document.documentElement}if(c&&c.getAttribute){var a=c.getAttribute("xml:lang");if(typeof(a)!="string"||a==""){a=c.getAttribute("lang")}if(typeof(a)=="string"&&a!=""){var b=window.cmp_getsupportedLangs();return b.indexOf(a.toUpperCase())!=-1?a:""}else{return""}}};(function(){var B=document;var C=B.getElementsByTagName;var o=window;var t="";var h="";var k="";var D=function(e){var i="cmp_"+e;e="cmp"+e+"=";var d="";var l=e.length;var G=location;var H=G.hash;var w=G.search;var u=H.indexOf(e);var F=w.indexOf(e);if(u!=-1){d=H.substring(u+l,9999)}else{if(F!=-1){d=w.substring(F+l,9999)}else{return i in o&&typeof(o[i])!=="function"?o[i]:""}}var E=d.indexOf("&");if(E!=-1){d=d.substring(0,E)}return d};var j=D("lang");if(j!=""){t=j;k=t}else{if("cmp_getlang" in o){t=o.cmp_getlang().toLowerCase();h=o.cmp_getlangs().slice(0,3).join("_");k=o.cmp_getPageLangs().slice(0,3).join("_");if("cmp_customlanguages" in o){var m=o.cmp_customlanguages;for(var x=0;x<m.length;x++){var a=m[x].l.toLowerCase();if(a==t){t="en"}}}}}var q=("cmp_proto" in o)?o.cmp_proto:"https:";if(q!="http:"&&q!="https:"){q="https:"}var n=("cmp_ref" in o)?o.cmp_ref:location.href;if(n.length>300){n=n.substring(0,300)}var z=function(d){var I=B.createElement("script");I.setAttribute("data-cmp-ab","1");I.type="text/javascript";I.async=true;I.src=d;var H=["body","div","span","script","head"];var w="currentScript";var F="parentElement";var l="appendChild";var G="body";if(B[w]&&B[w][F]){B[w][F][l](I)}else{if(B[G]){B[G][l](I)}else{for(var u=0;u<H.length;u++){var E=C(H[u]);if(E.length>0){E[0][l](I);break}}}}};var b=D("design");var c=D("regulationkey");var y=D("gppkey");var s=D("att");var f=o.encodeURIComponent;var g=false;try{g=B.cookie.length>0}catch(A){g=false}var p=q+"//"+o.cmp_host+"/delivery/cmp.php?";p+=("cmp_id" in o&&o.cmp_id>0?"id="+o.cmp_id:"")+("cmp_cdid" in o?"&cdid="+o.cmp_cdid:"")+"&h="+f(n);p+=(b!=""?"&cmpdesign="+f(b):"")+(c!=""?"&cmpregulationkey="+f(c):"")+(y!=""?"&cmpgppkey="+f(y):"");p+=(s!=""?"&cmpatt="+f(s):"")+("cmp_params" in o?"&"+o.cmp_params:"")+(g?"&__cmpfcc=1":"");z(p+"&l="+f(t)+"&ls="+f(h)+"&lp="+f(k)+"&o="+(new Date()).getTime());var r="js";var v=D("debugunminimized")!=""?"":".min";if(D("debugcoverage")=="1"){r="instrumented";v=""}if(D("debugtest")=="1"){r="jstests";v=""}z(q+"//"+o.cmp_cdn+"/delivery/"+r+"/cmp_final"+v+".js")})();window.cmp_addFrame=function(b){if(!window.frames[b]){if(document.body){var a=document.createElement("iframe");a.style.cssText="display:none";if("cmp_cdn" in window&&"cmp_ultrablocking" in window&&window.cmp_ultrablocking>0){a.src="//"+window.cmp_cdn+"/delivery/empty.html"}a.name=b;a.setAttribute("title","Intentionally hidden, please ignore");a.setAttribute("role","none");a.setAttribute("tabindex","-1");document.body.appendChild(a)}else{window.setTimeout(window.cmp_addFrame,10,b)}}};window.cmp_rc=function(c,b){var l="";try{l=document.cookie}catch(h){l=""}var j="";var f=0;var g=false;while(l!=""&&f<100){f++;while(l.substr(0,1)==" "){l=l.substr(1,l.length)}var k=l.substring(0,l.indexOf("="));if(l.indexOf(";")!=-1){var m=l.substring(l.indexOf("=")+1,l.indexOf(";"))}else{var m=l.substr(l.indexOf("=")+1,l.length)}if(c==k){j=m;g=true}var d=l.indexOf(";")+1;if(d==0){d=l.length}l=l.substring(d,l.length)}if(!g&&typeof(b)=="string"){j=b}return(j)};window.cmp_stub=function(){var a=arguments;__cmp.a=__cmp.a||[];if(!a.length){return __cmp.a}else{if(a[0]==="ping"){if(a[1]===2){a[2]({gdprApplies:gdprAppliesGlobally,cmpLoaded:false,cmpStatus:"stub",displayStatus:"hidden",apiVersion:"2.2",cmpId:31},true)}else{a[2](false,true)}}else{if(a[0]==="getUSPData"){a[2]({version:1,uspString:window.cmp_rc("__cmpccpausps","1---")},true)}else{if(a[0]==="getTCData"){__cmp.a.push([].slice.apply(a))}else{if(a[0]==="addEventListener"||a[0]==="removeEventListener"){__cmp.a.push([].slice.apply(a))}else{if(a.length==4&&a[3]===false){a[2]({},false)}else{__cmp.a.push([].slice.apply(a))}}}}}}};window.cmp_gpp_ping=function(){return{gppVersion:"1.1",cmpStatus:"stub",cmpDisplayStatus:"hidden",signalStatus:"not ready",supportedAPIs:["2:tcfeuv2","5:tcfcav1","7:usnat","8:usca","9:usva","10:usco","11:usut","12:usct"],cmpId:31,sectionList:[],applicableSections:[0],gppString:"",parsedSections:{}}};window.cmp_gppstub=function(){var c=arguments;__gpp.q=__gpp.q||[];if(!c.length){return __gpp.q}var h=c[0];var g=c.length>1?c[1]:null;var f=c.length>2?c[2]:null;var a=null;var j=false;if(h==="ping"){a=window.cmp_gpp_ping();j=true}else{if(h==="addEventListener"){__gpp.e=__gpp.e||[];if(!("lastId" in __gpp)){__gpp.lastId=0}__gpp.lastId++;var d=__gpp.lastId;__gpp.e.push({id:d,callback:g});a={eventName:"listenerRegistered",listenerId:d,data:true,pingData:window.cmp_gpp_ping()};j=true}else{if(h==="removeEventListener"){__gpp.e=__gpp.e||[];a=false;for(var e=0;e<__gpp.e.length;e++){if(__gpp.e[e].id==f){__gpp.e[e].splice(e,1);a=true;break}}j=true}else{__gpp.q.push([].slice.apply(c))}}}if(a!==null&&typeof(g)==="function"){g(a,j)}};window.cmp_msghandler=function(d){var a=typeof d.data==="string";try{var c=a?JSON.parse(d.data):d.data}catch(f){var c=null}if(typeof(c)==="object"&&c!==null&&"__cmpCall" in c){var b=c.__cmpCall;window.__cmp(b.command,b.parameter,function(h,g){var e={__cmpReturn:{returnValue:h,success:g,callId:b.callId}};d.source.postMessage(a?JSON.stringify(e):e,"*")})}if(typeof(c)==="object"&&c!==null&&"__uspapiCall" in c){var b=c.__uspapiCall;window.__uspapi(b.command,b.version,function(h,g){var e={__uspapiReturn:{returnValue:h,success:g,callId:b.callId}};d.source.postMessage(a?JSON.stringify(e):e,"*")})}if(typeof(c)==="object"&&c!==null&&"__tcfapiCall" in c){var b=c.__tcfapiCall;window.__tcfapi(b.command,b.version,function(h,g){var e={__tcfapiReturn:{returnValue:h,success:g,callId:b.callId}};d.source.postMessage(a?JSON.stringify(e):e,"*")},b.parameter)}if(typeof(c)==="object"&&c!==null&&"__gppCall" in c){var b=c.__gppCall;window.__gpp(b.command,function(h,g){var e={__gppReturn:{returnValue:h,success:g,callId:b.callId}};d.source.postMessage(a?JSON.stringify(e):e,"*")},"parameter" in b?b.parameter:null,"version" in b?b.version:1)}};window.cmp_setStub=function(a){if(!(a in window)||(typeof(window[a])!=="function"&&typeof(window[a])!=="object"&&(typeof(window[a])==="undefined"||window[a]!==null))){window[a]=window.cmp_stub;window[a].msgHandler=window.cmp_msghandler;window.addEventListener("message",window.cmp_msghandler,false)}};window.cmp_setGppStub=function(a){if(!(a in window)||(typeof(window[a])!=="function"&&typeof(window[a])!=="object"&&(typeof(window[a])==="undefined"||window[a]!==null))){window[a]=window.cmp_gppstub;window[a].msgHandler=window.cmp_msghandler;window.addEventListener("message",window.cmp_msghandler,false)}};if(!("cmp_noiframepixel" in window)){window.cmp_addFrame("__cmpLocator")}if((!("cmp_disableusp" in window)||!window.cmp_disableusp)&&!("cmp_noiframepixel" in window)){window.cmp_addFrame("__uspapiLocator")}if((!("cmp_disabletcf" in window)||!window.cmp_disabletcf)&&!("cmp_noiframepixel" in window)){window.cmp_addFrame("__tcfapiLocator")}if((!("cmp_disablegpp" in window)||!window.cmp_disablegpp)&&!("cmp_noiframepixel" in window)){window.cmp_addFrame("__gppLocator")}window.cmp_setStub("__cmp");if(!("cmp_disabletcf" in window)||!window.cmp_disabletcf){window.cmp_setStub("__tcfapi")}if(!("cmp_disableusp" in window)||!window.cmp_disableusp){window.cmp_setStub("__uspapi")}if(!("cmp_disablegpp" in window)||!window.cmp_disablegpp){window.cmp_setGppStub("__gpp")};</script>
+
+    
+    
+    <script>dataLayer = window.dataLayer || []; dataLayer.push({'webPropertyIDLocal':'UA-44463780-1','domain':'beiersdorf.com'}); </script><!-- GLOBAL Google Tag Manager --><script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='//tm-eu.beiersdorf.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-MC79F7');</script><!-- GLOBAL End Google Tag Manager --><!-- LOCAL Google Tag Manager --><script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='//tm-eu.beiersdorf.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-NFCZMC');</script><!-- LOCAL End Google Tag Manager -->
+</head>
+<body class=" avenir-next transform-text ">
+    <div id="site">
+        <!-- GLOBAL Google Tag Manager NoScript --><noscript>    <iframe src='//tm-eu.beiersdorf.com/ns.html?id=GTM-MC79F7' height='0' width='0' style='display:none;visibility:hidden'>    </iframe></noscript><!-- GLOBAL End Google Tag Manager NoScript --><!-- LOCAL Google Tag Manager NoScript --><noscript>    <iframe src='//tm-eu.beiersdorf.com/ns.html?id=GTM-NFCZMC' height='0' width='0' style='display:none;visibility:hidden'>    </iframe></noscript><!-- LOCAL End Google Tag Manager NoScript -->
+        
+        
+<div class="header-container">
+    <header id="header" data-module="Header">
+        <div class="cw-container">
+            <div class="burger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="main-row">
+                    <div class="logo">
+                        <a href="/">
+                            <img data-src='/~/media/Beiersdorf/components/Beiersdorf-logo-new-header.png' data-srcset='/~/media/Beiersdorf/components/Beiersdorf-logo-new-header.png?mw=210&hash=B3975ACDFF39F55AA5D6A73A44D98D2B 210w, /~/media/Beiersdorf/components/Beiersdorf-logo-new-header.png?mw=420&hash=9625C0D0B06E10B953D1A200B5F3B0A8 420w, /~/media/Beiersdorf/components/Beiersdorf-logo-new-header.png?mw=630&hash=645A289F0121127B5BE6D9ABF1C69C3D 630w' alt='' class='img' uk-img='' >
+                        </a>
+                    </div>
+                <div class="country-wrapper desktop-navigation">
+                    
+                    
+<a href="https://www.beiersdorf.com/meta-pages/int-website-selection" >        <div class="country-selector">
+            <div class="location-logo"></div>
+            <div class="location-label">Your Location</div>
+            <div class="location">Global</div>
+            <div class="arrow-right"></div>
+        </div>
+</a>
+                    
+    <ul class="meta-navigation">
+            <li>
+                <a href="https://www.beiersdorf.com/investor-relations/compliance/incident-reporting-platform" title="Incident Reporting" >Incident Reporting</a>
+            </li>
+            <li>
+                <a href="/meta-pages/faq/overview" title="FAQ" >FAQ</a>
+            </li>
+            <li>
+                <a href="/meta-pages/contact/contact-form" title="Contact" >Contact</a>
+            </li>
+            <li>
+                <a href="/meta-pages/imprint" title="Imprint" >Imprint</a>
+            </li>
+    </ul>
+
+                </div>
+            </div>
+
+            <div class="nav-row">
+                
+    <nav class="cw-header-nav">
+        <ul class="cw-nav-first-level">
+                <li class="cw-nav-first-level__item">
+                    
+
+
+<a class="cw-nav-first-level__link" href="#" data-title="About Us">
+    <span class="arrow-down"></span>
+</a>
+
+    <div class="cw-flyout-content cw-teaser-include ">
+        <div class="cw-container">
+                <ul class="cw-nav-second-level row children-count-4">
+                        <li class="cw-nav-second-level__item">
+                            
+
+<a href="/about-us" class='has-subitems' title="About Us">
+    About Us
+
+        <span class="arrow-down"></span>
+</a>
+
+    <ul class="cw-nav-third-level">
+        <li class="cw-nav-third-level__item mobile-only">
+            <a href="/about-us" title="About Us">
+                About Us
+            </a>
+        </li>
+            <li class="cw-nav-third-level__item">
+                
+
+<a href="/about-us/our-profile/strategy" class='' title="Our Strategy">
+    Our Strategy
+
+</a>
+
+
+            </li>
+            <li class="cw-nav-third-level__item">
+                
+
+<a href="/about-us/our-profile/our-purpose" class='' title="Our Purpose">
+    Our Purpose
+
+</a>
+
+
+            </li>
+            <li class="cw-nav-third-level__item">
+                
+
+<a href="/about-us/our-profile/our-core-values" class='' title="Our Core Values">
+    Our Core Values
+
+</a>
+
+
+            </li>
+            <li class="cw-nav-third-level__item">
+                
+
+<a href="/about-us/our-profile/our-leadership-team" class='' title="Our Leadership Team">
+    Our Leadership Team
+
+</a>
+
+
+            </li>
+            <li class="cw-nav-third-level__item">
+                
+
+<a href="/about-us/our-profile/supervisory-board" class='' title="Our Supervisory Board">
+    Our Supervisory Board
+
+</a>
+
+
+            </li>
+    </ul>
+
+                        </li>
+                        <li class="cw-nav-second-level__item">
+                            
+
+<a href="/about-us/locations" class='has-subitems' title="Our Locations">
+    Our Locations
+
+        <span class="arrow-down"></span>
+</a>
+
+    <ul class="cw-nav-third-level">
+        <li class="cw-nav-third-level__item mobile-only">
+            <a href="/about-us/locations" title="Our Locations">
+                Our Locations
+            </a>
+        </li>
+            <li class="cw-nav-third-level__item">
+                
+
+<a href="/about-us/locations/global-presence" class='' title="Our Global Presence">
+    Our Global Presence
+
+</a>
+
+
+            </li>
+            <li class="cw-nav-third-level__item">
+                
+
+<a href="/about-us/locations/headquarters" class='' title="Our Headquarters “Campus”">
+    Our Headquarters “Campus”
+
+</a>
+
+
+            </li>
+            <li class="cw-nav-third-level__item">
+                
+
+<a href="/about-us/locations/hamburg-addresses" class='' title="Our Hamburg Addresses">
+    Our Hamburg Addresses
+
+</a>
+
+
+            </li>
+            <li class="cw-nav-third-level__item">
+                
+
+<a href="/about-us/locations/research-locations" class='' title="Our Research Locations">
+    Our Research Locations
+
+</a>
+
+
+            </li>
+    </ul>
+
+                        </li>
+                        <li class="cw-nav-second-level__item">
+                            
+
+<a href="/about-us/research" class='has-subitems' title="Our Research">
+    Our Research
+
+        <span class="arrow-down"></span>
+</a>
+
+    <ul class="cw-nav-third-level">
+        <li class="cw-nav-third-level__item mobile-only">
+            <a href="/about-us/research" title="Our Research">
+                Our Research
+            </a>
+        </li>
+            <li class="cw-nav-third-level__item">
+                
+
+<a href="/about-us/research/approach" class='' title="Our Way of Working">
+    Our Way of Working
+
+</a>
+
+
+            </li>
+            <li class="cw-nav-third-level__item">
+                
+
+<a href="/about-us/research/publications" class='' title="Our Studies &amp; Publications">
+    Our Studies &amp; Publications
+
+</a>
+
+
+            </li>
+            <li class="cw-nav-third-level__item">
+                
+
+<a href="/about-us/research/research-for-alternatives-to-animal-testing" class='' title="Our Stance On Animal Testing">
+    Our Stance On Animal Testing
+
+</a>
+
+
+            </li>
+            <li class="cw-nav-third-level__item">
+                
+
+<a href="/about-us/research/open-innovation" class='' title="Our Open Innovation Approach">
+    Our Open Innovation Approach
+
+</a>
+
+
+            </li>
+    </ul>
+
+                        </li>
+                        <li class="cw-nav-second-level__item">
+                            
+
+<a href="/about-us/our-history/milestones" class='has-subitems' title="Our History">
+    Our History
+
+        <span class="arrow-down"></span>
+</a>
+
+    <ul class="cw-nav-third-level">
+        <li class="cw-nav-third-level__item mobile-only">
+            <a href="/about-us/our-history/milestones" title="Our History">
+                Our History
+            </a>
+        </li>
+            <li class="cw-nav-third-level__item">
+                
+
+<a href="/about-us/our-history/milestones" class='' title="Our Milestones">
+    Our Milestones
+
+</a>
+
+
+            </li>
+            <li class="cw-nav-third-level__item">
+                
+
+<a href="/about-us/our-history/founding-history" class='' title="Our Founding History">
+    Our Founding History
+
+</a>
+
+
+            </li>
+            <li class="cw-nav-third-level__item">
+                
+
+<a href="/about-us/our-history/local-heritage" class='' title="Our Local Heritage">
+    Our Local Heritage
+
+</a>
+
+
+            </li>
+            <li class="cw-nav-third-level__item">
+                
+
+<a href="/about-us/our-history/personalities" class='' title="Beiersdorf Personalities">
+    Beiersdorf Personalities
+
+</a>
+
+
+            </li>
+            <li class="cw-nav-third-level__item">
+                
+
+<a href="/about-us/our-history/international-development" class='' title="Our International Development">
+    Our International Development
+
+</a>
+
+
+            </li>
+            <li class="cw-nav-third-level__item">
+                
+
+<a href="/about-us/our-history/beiersdorf-chronicle" class='' title="Our Beiersdorf Chronicle">
+    Our Beiersdorf Chronicle
+
+</a>
+
+
+            </li>
+    </ul>
+
+                        </li>
+                </ul>
+        </div>
+    </div>
+
+                </li>
+                <li class="cw-nav-first-level__item">
+                    
+
+
+<a class="cw-nav-first-level__link" href="#" data-title="Brands">
+    <span class="arrow-down"></span>
+</a>
+
+    <div class="cw-flyout-content cw-teaser-include ">
+        <div class="cw-container">
+                <ul class="cw-nav-second-level row children-count-2">
+                        <li class="cw-nav-second-level__item">
+                            
+
+<a href="/brands" class='has-subitems' title="Our Brands">
+    Our Brands
+
+        <span class="arrow-down"></span>
+</a>
+
+    <ul class="cw-nav-third-level">
+        <li class="cw-nav-third-level__item mobile-only">
+            <a href="/brands" title="Our Brands">
+                Our Brands
+            </a>
+        </li>
+            <li class="cw-nav-third-level__item">
+                
+
+<a href="/brands/nivea" class='' title="NIVEA">
+    NIVEA
+
+</a>
+
+
+            </li>
+            <li class="cw-nav-third-level__item">
+                
+
+<a href="/brands/eucerin" class='' title="Eucerin">
+    Eucerin
+
+</a>
+
+
+            </li>
+            <li class="cw-nav-third-level__item">
+                
+
+<a href="/brands/hansaplast" class='' title="Hansaplast / Elastoplast / CURITAS">
+    Hansaplast / Elastoplast / CURITAS
+
+</a>
+
+
+            </li>
+            <li class="cw-nav-third-level__item">
+                
+
+<a href="/brands/la-prairie" class='' title="La Prairie">
+    La Prairie
+
+</a>
+
+
+            </li>
+            <li class="cw-nav-third-level__item">
+                
+
+<a href="/brands/chantecaille" class='' title="Chantecaille">
+    Chantecaille
+
+</a>
+
+
+            </li>
+            <li class="cw-nav-third-level__item">
+                
+
+<a href="/brands/tesa" class='' title="tesa">
+    tesa
+
+</a>
+
+
+            </li>
+            <li class="cw-nav-third-level__item">
+                
+
+<a href="/brands/other-iconic-brands" class='' title="Other Iconic Brands">
+    Other Iconic Brands
+
+</a>
+
+
+            </li>
+    </ul>
+
+                        </li>
+                        <li class="cw-nav-second-level__item">
+                            
+
+<a href="/brands/brand-history/nivea" class='has-subitems' title="Brand History">
+    Brand History
+
+        <span class="arrow-down"></span>
+</a>
+
+    <ul class="cw-nav-third-level">
+        <li class="cw-nav-third-level__item mobile-only">
+            <a href="/brands/brand-history/nivea" title="Brand History">
+                Brand History
+            </a>
+        </li>
+            <li class="cw-nav-third-level__item">
+                
+
+<a href="/brands/brand-history/nivea" class='' title="NIVEA">
+    NIVEA
+
+</a>
+
+
+            </li>
+            <li class="cw-nav-third-level__item">
+                
+
+<a href="/brands/brand-history/eucerin" class='' title="Eucerin">
+    Eucerin
+
+</a>
+
+
+            </li>
+            <li class="cw-nav-third-level__item">
+                
+
+<a href="/brands/brand-history/hansaplast" class='' title="Hansaplast">
+    Hansaplast
+
+</a>
+
+
+            </li>
+            <li class="cw-nav-third-level__item">
+                
+
+<a href="/brands/brand-history/la-prairie" class='' title="La Prairie">
+    La Prairie
+
+</a>
+
+
+            </li>
+            <li class="cw-nav-third-level__item">
+                
+
+<a href="/brands/brand-history/labello" class='' title="Labello">
+    Labello
+
+</a>
+
+
+            </li>
+            <li class="cw-nav-third-level__item">
+                
+
+<a href="/brands/brand-history/8x4" class='' title="8X4">
+    8X4
+
+</a>
+
+
+            </li>
+            <li class="cw-nav-third-level__item">
+                
+
+<a href="/brands/brand-history/florena" class='' title="Florena">
+    Florena
+
+</a>
+
+
+            </li>
+            <li class="cw-nav-third-level__item">
+                
+
+<a href="/brands/brand-history/beiersdorf-classics-cinema" class='' title="Classics Cinema">
+    Classics Cinema
+
+</a>
+
+
+            </li>
+            <li class="cw-nav-third-level__item">
+                
+
+<a href="/brands/brand-history/nivea-ball-special" class='' title="NIVEA Ball">
+    NIVEA Ball
+
+</a>
+
+
+            </li>
+    </ul>
+
+                        </li>
+                </ul>
+        </div>
+    </div>
+
+                </li>
+                <li class="cw-nav-first-level__item">
+                    
+
+
+<a class="cw-nav-first-level__link" href="#" data-title="Responsibility & Commitments">
+    <span class="arrow-down hduhjh"></span>
+</a>
+
+    <div class="cw-flyout-content ">
+
+        <div class="cw-container">
+                <ul class="cw-nav-second-level row children-count-4">
+                        <li class="cw-nav-second-level__item">
+                            
+
+<a href="/responsibility-and-commitments/strategic-framework" class='has-subitems' title="Strategic Framework">
+    Strategic Framework
+
+        <span class="arrow-down"></span>
+</a>
+
+    <ul class="cw-nav-third-level">
+        <li class="cw-nav-third-level__item mobile-only">
+            <a href="/responsibility-and-commitments/strategic-framework" title="Strategic Framework">
+                Strategic Framework
+            </a>
+        </li>
+            <li class="cw-nav-third-level__item">
+                
+
+<a href="/responsibility-and-commitments/strategic-framework/targets-and-achievements" class='' title="Targets &amp; Achievements">
+    Targets &amp; Achievements
+
+</a>
+
+
+            </li>
+            <li class="cw-nav-third-level__item">
+                
+
+<a href="/responsibility-and-commitments/strategic-framework/product-transparency" class='' title="Product Transparency">
+    Product Transparency
+
+</a>
+
+
+            </li>
+            <li class="cw-nav-third-level__item">
+                
+
+<a href="/responsibility-and-commitments/strategic-framework/partnerships" class='' title="Partnerships">
+    Partnerships
+
+</a>
+
+
+            </li>
+            <li class="cw-nav-third-level__item">
+                
+
+<a href="/responsibility-and-commitments/strategic-framework/ratings-and-rankings" class='' title="Ratings &amp; Rankings">
+    Ratings &amp; Rankings
+
+</a>
+
+
+            </li>
+    </ul>
+
+                        </li>
+                        <li class="cw-nav-second-level__item">
+                            
+
+<a href="/responsibility-and-commitments/environment" class='has-subitems' title="Environment">
+    Environment
+
+        <span class="arrow-down"></span>
+</a>
+
+    <ul class="cw-nav-third-level">
+        <li class="cw-nav-third-level__item mobile-only">
+            <a href="/responsibility-and-commitments/environment" title="Environment">
+                Environment
+            </a>
+        </li>
+            <li class="cw-nav-third-level__item">
+                
+
+<a href="/responsibility-and-commitments/environment/for-climate" class='' title="For Climate">
+    For Climate
+
+</a>
+
+
+            </li>
+            <li class="cw-nav-third-level__item">
+                
+
+<a href="/responsibility-and-commitments/environment/for-circularity" class='' title="For Circularity ">
+    For Circularity 
+
+</a>
+
+
+            </li>
+            <li class="cw-nav-third-level__item">
+                
+
+<a href="/responsibility-and-commitments/environment/for-nature" class='' title="For Nature">
+    For Nature
+
+</a>
+
+
+            </li>
+    </ul>
+
+                        </li>
+                        <li class="cw-nav-second-level__item">
+                            
+
+<a href="/responsibility-and-commitments/society-and-inclusion" class='has-subitems' title="Inclusion &amp; Society">
+    Inclusion &amp; Society
+
+        <span class="arrow-down"></span>
+</a>
+
+    <ul class="cw-nav-third-level">
+        <li class="cw-nav-third-level__item mobile-only">
+            <a href="/responsibility-and-commitments/society-and-inclusion" title="Inclusion &amp; Society">
+                Inclusion &amp; Society
+            </a>
+        </li>
+            <li class="cw-nav-third-level__item">
+                
+
+<a href="/responsibility-and-commitments/society-and-inclusion/living-diversity-equity-and-inclusion-at-beiersdorf" class='' title="For our Employees">
+    For our Employees
+
+</a>
+
+
+            </li>
+            <li class="cw-nav-third-level__item">
+                
+
+<a href="/responsibility-and-commitments/society-and-inclusion/using-our-brands-as-voices-for-diversity" class='' title="For our Consumers">
+    For our Consumers
+
+</a>
+
+
+            </li>
+            <li class="cw-nav-third-level__item">
+                
+
+<a href="/responsibility-and-commitments/society-and-inclusion/inclusive-society" class='' title="For the Wider Society">
+    For the Wider Society
+
+</a>
+
+
+            </li>
+    </ul>
+
+                        </li>
+                        <li class="cw-nav-second-level__item">
+                            
+
+<a href="/responsibility-and-commitments/reporting/sustainability-reporting" class='has-subitems' title="Reporting &amp; Policies">
+    Reporting &amp; Policies
+
+        <span class="arrow-down"></span>
+</a>
+
+    <ul class="cw-nav-third-level">
+        <li class="cw-nav-third-level__item mobile-only">
+            <a href="/responsibility-and-commitments/reporting/sustainability-reporting" title="Reporting &amp; Policies">
+                Reporting &amp; Policies
+            </a>
+        </li>
+            <li class="cw-nav-third-level__item">
+                
+
+<a href="https://reports.beiersdorf.com/annual-report/2025/combined-management-report/non-financial-statement.html" class='' title="Nonfinancial Statement 2025">
+    Nonfinancial Statement 2025
+
+</a>
+
+
+            </li>
+            <li class="cw-nav-third-level__item">
+                
+
+<a href="/responsibility-and-commitments/reporting/climate-transition-plan" class='' title="Climate Transition Plan">
+    Climate Transition Plan
+
+</a>
+
+
+            </li>
+            <li class="cw-nav-third-level__item">
+                
+
+<a href="/responsibility-and-commitments/reporting/human-rights-policies" class='' title="Human Rights Policies">
+    Human Rights Policies
+
+</a>
+
+
+            </li>
+            <li class="cw-nav-third-level__item">
+                
+
+<a href="/responsibility-and-commitments/reporting/downloads" class='' title="Download Center">
+    Download Center
+
+</a>
+
+
+            </li>
+    </ul>
+
+                        </li>
+                </ul>
+        </div>
+    </div>
+
+
+                </li>
+                <li class="cw-nav-first-level__item">
+                    
+
+
+<a class="cw-nav-first-level__link" href="#" data-title="Innovation">
+    <span class="arrow-down"></span>
+</a>
+
+    <div class="cw-flyout-content cw-teaser-include ">
+        <div class="cw-container">
+                <ul class="cw-nav-second-level row children-count-1">
+                        <li class="cw-nav-second-level__item">
+                            
+
+<a href="/innovation" class='has-subitems' title="Innovation">
+    Innovation
+
+        <span class="arrow-down"></span>
+</a>
+
+    <ul class="cw-nav-third-level">
+        <li class="cw-nav-third-level__item mobile-only">
+            <a href="/innovation" title="Innovation">
+                Innovation
+            </a>
+        </li>
+            <li class="cw-nav-third-level__item">
+                
+
+<a href="/innovation/thiamidol" class='' title="Thiamidol&#174; – Hyperpigmentation">
+    Thiamidol&#174; – Hyperpigmentation
+
+</a>
+
+
+            </li>
+            <li class="cw-nav-third-level__item">
+                
+
+<a href="/innovation/epicelline" class='' title="EPICELLINE&#174; – Skin Rejuvenation">
+    EPICELLINE&#174; – Skin Rejuvenation
+
+</a>
+
+
+            </li>
+            <li class="cw-nav-third-level__item">
+                
+
+<a href="/innovation/microbiome" class='' title="Microbiome – Skin Barrier">
+    Microbiome – Skin Barrier
+
+</a>
+
+
+            </li>
+            <li class="cw-nav-third-level__item">
+                
+
+<a href="/innovation/q10" class='' title="Coenzyme Q10 – Skin Cell Energy">
+    Coenzyme Q10 – Skin Cell Energy
+
+</a>
+
+
+            </li>
+    </ul>
+
+                        </li>
+                </ul>
+        </div>
+    </div>
+
+                </li>
+                <li class="cw-nav-first-level__item">
+                    
+
+
+<a class="cw-nav-first-level__link" href="#" data-title="Investor Relations">
+    <span class="arrow-down hduhjh"></span>
+</a>
+
+    <div class="cw-flyout-content cw-flyout-content--overview">
+
+        <div class="cw-container">
+<a href="/investor-relations/overview" class="overview-link" >                        <span class="title">Overview</span>
+</a>                <ul class="cw-nav-second-level row children-count-6">
+                        <li class="cw-nav-second-level__item">
+                            
+
+<a href="/investor-relations/shares/share-price" class='has-subitems' title="Shares &amp; Strategy">
+    Shares &amp; Strategy
+
+        <span class="arrow-down"></span>
+</a>
+
+    <ul class="cw-nav-third-level">
+        <li class="cw-nav-third-level__item mobile-only">
+            <a href="/investor-relations/shares/share-price" title="Shares &amp; Strategy">
+                Shares &amp; Strategy
+            </a>
+        </li>
+            <li class="cw-nav-third-level__item">
+                
+
+<a href="/investor-relations/shares/share-price" class='' title="Share Price">
+    Share Price
+
+</a>
+
+
+            </li>
+            <li class="cw-nav-third-level__item">
+                
+
+<a href="/investor-relations/shares/shareholder-structure" class='' title="Shareholder Structure">
+    Shareholder Structure
+
+</a>
+
+
+            </li>
+            <li class="cw-nav-third-level__item">
+                
+
+<a href="/investor-relations/shares/return-calculator" class='' title="Total Return Calculator">
+    Total Return Calculator
+
+</a>
+
+
+            </li>
+            <li class="cw-nav-third-level__item">
+                
+
+<a href="/investor-relations/shares/analysts" class='' title="Analysts">
+    Analysts
+
+</a>
+
+
+            </li>
+            <li class="cw-nav-third-level__item">
+                
+
+<a href="/investor-relations/shares/dividend" class='' title="Dividend">
+    Dividend
+
+</a>
+
+
+            </li>
+            <li class="cw-nav-third-level__item">
+                
+
+<a href="/investor-relations/shares/share-buyback" class='' title="Share Buyback">
+    Share Buyback
+
+</a>
+
+
+            </li>
+            <li class="cw-nav-third-level__item">
+                
+
+<a href="/investor-relations/shares/factsheet" class='' title="Factsheet">
+    Factsheet
+
+</a>
+
+
+            </li>
+            <li class="cw-nav-third-level__item">
+                
+
+<a href="/investor-relations/shares/guidance" class='' title="Guidance">
+    Guidance
+
+</a>
+
+
+            </li>
+            <li class="cw-nav-third-level__item">
+                
+
+<a href="/about-us/our-profile/strategy" class='' title="Our Strategy">
+    Our Strategy
+
+</a>
+
+
+            </li>
+            <li class="cw-nav-third-level__item">
+                
+
+<a href="/responsibility-and-commitments" class='' title="Responsibility &amp; Commitments">
+    Responsibility &amp; Commitments
+
+</a>
+
+
+            </li>
+    </ul>
+
+                        </li>
+                        <li class="cw-nav-second-level__item">
+                            
+
+<a href="/investor-relations/financial-reports/financial-news" class='has-subitems' title="Publications">
+    Publications
+
+        <span class="arrow-down"></span>
+</a>
+
+    <ul class="cw-nav-third-level">
+        <li class="cw-nav-third-level__item mobile-only">
+            <a href="/investor-relations/financial-reports/financial-news" title="Publications">
+                Publications
+            </a>
+        </li>
+            <li class="cw-nav-third-level__item">
+                
+
+<a href="/investor-relations/financial-reports/financial-news" class='' title="Financial News">
+    Financial News
+
+</a>
+
+
+            </li>
+            <li class="cw-nav-third-level__item">
+                
+
+<a href="https://reports.beiersdorf.com/annual-report/2025/" class='' title="Current Annual Report">
+    Current Annual Report
+
+</a>
+
+
+            </li>
+            <li class="cw-nav-third-level__item">
+                
+
+<a href="/investor-relations/financial-reports/financial-reports-and-presentations" class='' title="Financial Reports &amp; Presentations">
+    Financial Reports &amp; Presentations
+
+</a>
+
+
+            </li>
+            <li class="cw-nav-third-level__item">
+                
+
+<a href="/investor-relations/financial-reports/financial-calendar" class='' title="Financial Calendar 2026">
+    Financial Calendar 2026
+
+</a>
+
+
+            </li>
+            <li class="cw-nav-third-level__item">
+                
+
+<a href="/investor-relations/financial-reports/ad-hoc-disclosures" class='' title="Ad Hoc Disclosures">
+    Ad Hoc Disclosures
+
+</a>
+
+
+            </li>
+            <li class="cw-nav-third-level__item">
+                
+
+<a href="/investor-relations/financial-reports/directors-dealings" class='' title="Directors’ Dealings">
+    Directors’ Dealings
+
+</a>
+
+
+            </li>
+            <li class="cw-nav-third-level__item">
+                
+
+<a href="/investor-relations/financial-reports/voting-rights-notifications" class='' title="Voting-Rights Notifications">
+    Voting-Rights Notifications
+
+</a>
+
+
+            </li>
+            <li class="cw-nav-third-level__item">
+                
+
+<a href="/investor-relations/financial-reports/capital-markets-day-2024" class='' title="Capital Markets Day 2024">
+    Capital Markets Day 2024
+
+</a>
+
+
+            </li>
+    </ul>
+
+                        </li>
+                        <li class="cw-nav-second-level__item">
+                            
+
+<a href="/investor-relations/corporate-governance/introduction" class='has-subitems' title="Corporate Governance">
+    Corporate Governance
+
+        <span class="arrow-down"></span>
+</a>
+
+    <ul class="cw-nav-third-level">
+        <li class="cw-nav-third-level__item mobile-only">
+            <a href="/investor-relations/corporate-governance/introduction" title="Corporate Governance">
+                Corporate Governance
+            </a>
+        </li>
+            <li class="cw-nav-third-level__item">
+                
+
+<a href="/investor-relations/corporate-governance/introduction" class='' title="Importance &amp; Reporting">
+    Importance &amp; Reporting
+
+</a>
+
+
+            </li>
+            <li class="cw-nav-third-level__item">
+                
+
+<a href="/investor-relations/corporate-governance/declaration-of-compliance" class='' title="Declaration of Compliance">
+    Declaration of Compliance
+
+</a>
+
+
+            </li>
+            <li class="cw-nav-third-level__item">
+                
+
+<a href="/investor-relations/corporate-governance/corporate-governance-statement" class='' title="Corporate Governance Statement">
+    Corporate Governance Statement
+
+</a>
+
+
+            </li>
+            <li class="cw-nav-third-level__item">
+                
+
+<a href="/investor-relations/corporate-governance/management-structure" class='' title="Management Structure, Articles of Association &amp; Bylaws">
+    Management Structure, Articles of Association &amp; Bylaws
+
+</a>
+
+
+            </li>
+            <li class="cw-nav-third-level__item">
+                
+
+<a href="/investor-relations/corporate-governance/remuneration-of-executive-board-and-supervisory-board" class='' title="Remuneration of Executive Board and Supervisory Board">
+    Remuneration of Executive Board and Supervisory Board
+
+</a>
+
+
+            </li>
+            <li class="cw-nav-third-level__item">
+                
+
+<a href="/investor-relations/corporate-governance/transparency-accounting-auditing" class='' title="Transparency, Accounting &amp; Auditing">
+    Transparency, Accounting &amp; Auditing
+
+</a>
+
+
+            </li>
+    </ul>
+
+                        </li>
+                        <li class="cw-nav-second-level__item">
+                            
+
+<a href="/investor-relations/compliance/introduction" class='has-subitems' title="Compliance">
+    Compliance
+
+        <span class="arrow-down"></span>
+</a>
+
+    <ul class="cw-nav-third-level">
+        <li class="cw-nav-third-level__item mobile-only">
+            <a href="/investor-relations/compliance/introduction" title="Compliance">
+                Compliance
+            </a>
+        </li>
+            <li class="cw-nav-third-level__item">
+                
+
+<a href="/investor-relations/compliance/introduction" class='' title="Introduction ">
+    Introduction 
+
+</a>
+
+
+            </li>
+            <li class="cw-nav-third-level__item">
+                
+
+<a href="/investor-relations/compliance/compliance-principles" class='' title="Compliance Principles ">
+    Compliance Principles 
+
+</a>
+
+
+            </li>
+            <li class="cw-nav-third-level__item">
+                
+
+<a href="/investor-relations/compliance/code-of-conduct" class='' title="Code of Conduct">
+    Code of Conduct
+
+</a>
+
+
+            </li>
+            <li class="cw-nav-third-level__item">
+                
+
+<a href="/investor-relations/compliance/incident-reporting-platform" class='' title="Speak up. We care. – Incident Reporting Platform">
+    Speak up. We care. – Incident Reporting Platform
+
+</a>
+
+
+            </li>
+    </ul>
+
+                        </li>
+                        <li class="cw-nav-second-level__item">
+                            
+
+<a href="/investor-relations/annual-general-meeting/2026" class='has-subitems' title="Annual General Meeting">
+    Annual General Meeting
+
+        <span class="arrow-down"></span>
+</a>
+
+    <ul class="cw-nav-third-level">
+        <li class="cw-nav-third-level__item mobile-only">
+            <a href="/investor-relations/annual-general-meeting/2026" title="Annual General Meeting">
+                Annual General Meeting
+            </a>
+        </li>
+            <li class="cw-nav-third-level__item">
+                
+
+<a href="/investor-relations/annual-general-meeting/2026" class='' title="2026">
+    2026
+
+</a>
+
+
+            </li>
+            <li class="cw-nav-third-level__item">
+                
+
+<a href="/investor-relations/annual-general-meeting/archive" class='' title="Archive">
+    Archive
+
+</a>
+
+
+            </li>
+    </ul>
+
+                        </li>
+                        <li class="cw-nav-second-level__item">
+                            
+
+<a href="/investor-relations/service/investor-contacts" class='has-subitems' title="Contact">
+    Contact
+
+        <span class="arrow-down"></span>
+</a>
+
+    <ul class="cw-nav-third-level">
+        <li class="cw-nav-third-level__item mobile-only">
+            <a href="/investor-relations/service/investor-contacts" title="Contact">
+                Contact
+            </a>
+        </li>
+            <li class="cw-nav-third-level__item">
+                
+
+<a href="/investor-relations/service/investor-contacts" class='' title="Investor Contacts">
+    Investor Contacts
+
+</a>
+
+
+            </li>
+            <li class="cw-nav-third-level__item">
+                
+
+<a href="https://www.beiersdorf.com/investor-relations/service/faq" class='' title="">
+    
+
+</a>
+
+
+            </li>
+            <li class="cw-nav-third-level__item">
+                
+
+<a href="/investor-relations/service/glossary" class='' title="Glossary">
+    Glossary
+
+</a>
+
+
+            </li>
+    </ul>
+
+                        </li>
+                </ul>
+        </div>
+    </div>
+
+
+                </li>
+                <li class="cw-nav-first-level__item">
+                    
+
+
+<a class="cw-nav-first-level__link" href="#" data-title="Career">
+    <span class="arrow-down hduhjh"></span>
+</a>
+
+    <div class="cw-flyout-content cw-flyout-content--overview">
+
+        <div class="cw-container">
+<a href="/career/overview" class="overview-link" >                        <span class="title">Overview</span>
+</a>                <ul class="cw-nav-second-level row children-count-5">
+                        <li class="cw-nav-second-level__item">
+                            
+
+<a href="/career/locations" class='has-subitems' title="Locations">
+    Locations
+
+        <span class="arrow-down"></span>
+</a>
+
+    <ul class="cw-nav-third-level">
+        <li class="cw-nav-third-level__item mobile-only">
+            <a href="/career/locations" title="Locations">
+                Locations
+            </a>
+        </li>
+            <li class="cw-nav-third-level__item">
+                
+
+<a href="/career/locations/headquarters" class='' title="Headquarters">
+    Headquarters
+
+</a>
+
+
+            </li>
+            <li class="cw-nav-third-level__item">
+                
+
+<a href="https://www.beiersdorf.com/career/locations#europe" class='' title="Europe">
+    Europe
+
+</a>
+
+
+            </li>
+            <li class="cw-nav-third-level__item">
+                
+
+<a href="https://www.beiersdorf.com/career/locations#north-america" class='' title="North America">
+    North America
+
+</a>
+
+
+            </li>
+            <li class="cw-nav-third-level__item">
+                
+
+<a href="https://www.beiersdorf.com/career/locations#south-america" class='' title="Latin America">
+    Latin America
+
+</a>
+
+
+            </li>
+            <li class="cw-nav-third-level__item">
+                
+
+<a href="https://www.beiersdorf.com/career/locations#asia" class='' title="Asia Pacific">
+    Asia Pacific
+
+</a>
+
+
+            </li>
+            <li class="cw-nav-third-level__item">
+                
+
+<a href="https://www.beiersdorf.com/career/locations#africa" class='' title="Africa &amp; Middle East">
+    Africa &amp; Middle East
+
+</a>
+
+
+            </li>
+    </ul>
+
+                        </li>
+                        <li class="cw-nav-second-level__item">
+                            
+
+<a href="/career/students/overview" class='has-subitems' title="Early Careers">
+    Early Careers
+
+        <span class="arrow-down"></span>
+</a>
+
+    <ul class="cw-nav-third-level">
+        <li class="cw-nav-third-level__item mobile-only">
+            <a href="/career/students/overview" title="Early Careers">
+                Early Careers
+            </a>
+        </li>
+            <li class="cw-nav-third-level__item">
+                
+
+<a href="/career/students/internships-and-working-students" class='' title="Internships &amp; Working Students">
+    Internships &amp; Working Students
+
+</a>
+
+
+            </li>
+            <li class="cw-nav-third-level__item">
+                
+
+<a href="/career/students/trainee-program/our-graduate-programmes" class='' title="Our Graduate Programs">
+    Our Graduate Programs
+
+</a>
+
+
+            </li>
+            <li class="cw-nav-third-level__item">
+                
+
+<a href="/career/students/phd-program" class='' title="Our PhD Program">
+    Our PhD Program
+
+</a>
+
+
+            </li>
+    </ul>
+
+                        </li>
+                        <li class="cw-nav-second-level__item">
+                            
+
+<a href="/career/teams/overview" class='has-subitems' title="Teams">
+    Teams
+
+        <span class="arrow-down"></span>
+</a>
+
+    <ul class="cw-nav-third-level">
+        <li class="cw-nav-third-level__item mobile-only">
+            <a href="/career/teams/overview" title="Teams">
+                Teams
+            </a>
+        </li>
+            <li class="cw-nav-third-level__item">
+                
+
+<a href="/career/teams/marketing" class='' title="Marketing">
+    Marketing
+
+</a>
+
+
+            </li>
+            <li class="cw-nav-third-level__item">
+                
+
+<a href="/career/teams/sales-and-ecommerce" class='' title="Sales &amp; eCommerce">
+    Sales &amp; eCommerce
+
+</a>
+
+
+            </li>
+            <li class="cw-nav-third-level__item">
+                
+
+<a href="/career/teams/it" class='' title="IT">
+    IT
+
+</a>
+
+
+            </li>
+            <li class="cw-nav-third-level__item">
+                
+
+<a href="/career/teams/finance-and-controlling" class='' title="Finance &amp; Controlling">
+    Finance &amp; Controlling
+
+</a>
+
+
+            </li>
+            <li class="cw-nav-third-level__item">
+                
+
+<a href="/career/teams/supply-chain-management" class='' title="Supply Chain Management">
+    Supply Chain Management
+
+</a>
+
+
+            </li>
+            <li class="cw-nav-third-level__item">
+                
+
+<a href="/career/teams/research-and-development" class='' title="Research &amp; Development">
+    Research &amp; Development
+
+</a>
+
+
+            </li>
+            <li class="cw-nav-third-level__item">
+                
+
+<a href="/career/teams/human-resources" class='' title="Human Resources">
+    Human Resources
+
+</a>
+
+
+            </li>
+            <li class="cw-nav-third-level__item">
+                
+
+<a href="/career/teams/campus-services" class='' title="Campus Services">
+    Campus Services
+
+</a>
+
+
+            </li>
+    </ul>
+
+                        </li>
+                        <li class="cw-nav-second-level__item">
+                            
+
+<a href="/career/your-application/overview" class='has-subitems' title="Your Application">
+    Your Application
+
+        <span class="arrow-down"></span>
+</a>
+
+    <ul class="cw-nav-third-level">
+        <li class="cw-nav-third-level__item mobile-only">
+            <a href="/career/your-application/overview" title="Your Application">
+                Your Application
+            </a>
+        </li>
+            <li class="cw-nav-third-level__item">
+                
+
+<a href="/career/your-application/job-search" class='' title="Job Search">
+    Job Search
+
+</a>
+
+
+            </li>
+            <li class="cw-nav-third-level__item">
+                
+
+<a href="/career/your-application/job-alert" class='' title="Job Alert">
+    Job Alert
+
+</a>
+
+
+            </li>
+            <li class="cw-nav-third-level__item">
+                
+
+<a href="/career/your-application/application-process" class='' title="Application Process">
+    Application Process
+
+</a>
+
+
+            </li>
+            <li class="cw-nav-third-level__item">
+                
+
+<a href="/career/your-application/application-faq" class='' title="Application FAQ">
+    Application FAQ
+
+</a>
+
+
+            </li>
+    </ul>
+
+                        </li>
+                        <li class="cw-nav-second-level__item">
+                            
+
+<a href="/career/why-beiersdorf/overview" class='has-subitems' title="Why Beiersdorf">
+    Why Beiersdorf
+
+        <span class="arrow-down"></span>
+</a>
+
+    <ul class="cw-nav-third-level">
+        <li class="cw-nav-third-level__item mobile-only">
+            <a href="/career/why-beiersdorf/overview" title="Why Beiersdorf">
+                Why Beiersdorf
+            </a>
+        </li>
+            <li class="cw-nav-third-level__item">
+                
+
+<a href="/career/why-beiersdorf/our-culture" class='' title="Our Culture">
+    Our Culture
+
+</a>
+
+
+            </li>
+            <li class="cw-nav-third-level__item">
+                
+
+<a href="/career/why-beiersdorf/benefits" class='' title="Your Benefits">
+    Your Benefits
+
+</a>
+
+
+            </li>
+            <li class="cw-nav-third-level__item">
+                
+
+<a href="https://www.beiersdorf.com/responsibility-and-commitments/society-and-inclusion/living-diversity-equity-and-inclusion-at-beiersdorf" class='' title="Diversity, Equity, and Inclusion">
+    Diversity, Equity, and Inclusion
+
+</a>
+
+
+            </li>
+    </ul>
+
+                        </li>
+                </ul>
+        </div>
+    </div>
+
+
+                </li>
+                <li class="cw-nav-first-level__item">
+                    
+
+
+<a class="cw-nav-first-level__link" href="#" data-title="Press">
+    <span class="arrow-down hduhjh"></span>
+</a>
+
+    <div class="cw-flyout-content ">
+
+        <div class="cw-container">
+                <ul class="cw-nav-second-level row children-count-1">
+                        <li class="cw-nav-second-level__item">
+                            
+
+<a href="/newsroom" class='has-subitems' title="Press">
+    Press
+
+        <span class="arrow-down"></span>
+</a>
+
+    <ul class="cw-nav-third-level">
+        <li class="cw-nav-third-level__item mobile-only">
+            <a href="/newsroom" title="Press">
+                Press
+            </a>
+        </li>
+            <li class="cw-nav-third-level__item">
+                
+
+<a href="/newsroom/press-information/all-press-releases" class='' title="Press Releases">
+    Press Releases
+
+</a>
+
+
+            </li>
+            <li class="cw-nav-third-level__item">
+                
+
+<a href="/newsroom/download-center" class='' title="Download Center">
+    Download Center
+
+</a>
+
+
+            </li>
+            <li class="cw-nav-third-level__item">
+                
+
+<a href="/newsroom/media-contacts" class='' title="Media Contacts">
+    Media Contacts
+
+</a>
+
+
+            </li>
+            <li class="cw-nav-third-level__item">
+                
+
+<a href="/meta-pages/faq/company" class='' title="FAQs &amp; Statements">
+    FAQs &amp; Statements
+
+</a>
+
+
+            </li>
+    </ul>
+
+                        </li>
+                </ul>
+        </div>
+    </div>
+
+
+                </li>
+                <li class="cw-nav-first-level__item">
+                    
+
+
+<a class="cw-nav-first-level__link" href="#" data-title="Blog">
+    <span class="arrow-down hduhjh"></span>
+</a>
+
+    <div class="cw-flyout-content ">
+
+        <div class="cw-container">
+                <ul class="cw-nav-second-level row children-count-2">
+                        <li class="cw-nav-second-level__item">
+                            
+
+<a href="/blog" class='' title="Our Blog">
+    Our Blog
+
+</a>
+
+
+                        </li>
+                        <li class="cw-nav-second-level__item">
+                            
+
+<a href="/blog/authors" class='' title="Our Authors">
+    Our Authors
+
+</a>
+
+
+                        </li>
+                </ul>
+        </div>
+    </div>
+
+
+                </li>
+        </ul>
+        <div class="cw-search">
+            <form class="cw-search-form" action="/meta-pages/search-result-page" method="get">
+                <input class="search-box" type="search" placeholder="How can we help?" value="" spellcheck="false" name="query" />
+                <button type="submit" class="search-icon"></button>
+            </form>
+        </div>
+        <div class="cw-flyout__layer"></div>
+        <a class="header-nav-toggle header-nav-item header-nav-hidden@s" data-header-nav-toggle data-header-nav-toggle-icon href="#offcanvas-nav"></a>
+    </nav>
+
+
+                <div class="country-wrapper mobile-navigation">
+                    
+    <ul class="meta-navigation">
+            <li>
+                <a href="https://www.beiersdorf.com/investor-relations/compliance/incident-reporting-platform" title="Incident Reporting" >Incident Reporting</a>
+            </li>
+            <li>
+                <a href="/meta-pages/faq/overview" title="FAQ" >FAQ</a>
+            </li>
+            <li>
+                <a href="/meta-pages/contact/contact-form" title="Contact" >Contact</a>
+            </li>
+            <li>
+                <a href="/meta-pages/imprint" title="Imprint" >Imprint</a>
+            </li>
+    </ul>
+
+                    
+                    <div class="country-content">
+                        
+<a href="https://www.beiersdorf.com/meta-pages/int-website-selection" >        <div class="country-selector">
+            <div class="location-logo"></div>
+            <div class="location-label">Your Location</div>
+            <div class="location">Global</div>
+            <div class="arrow-right"></div>
+        </div>
+</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+</div>
+        <main>
+            
+<section class="cw-cp cw-stage" data-module="Stage" data-delay-per-slide="12000">
+    <div class="cw-slider uk-position-relative">
+        
+
+        <div class="uk-position-relative" tabindex="-1">
+            <ul class="cw-slider__items uk-slider-items uk-child-width-1-1@m" data-no-lazy-load>
+                
+
+<li>
+
+    
+<picture class='stage' ><source media='(min-width: 768px)' data-srcset='/~/media/Beiersdorf/home-2019/stage/Beiersdorf-financial-publication-stage-2023.jpg?rx=0&ry=1447&rw=8255&rh=3225&mw=768&hash=902838A6D7C64A748495E6F174229551 768w, /~/media/Beiersdorf/home-2019/stage/Beiersdorf-financial-publication-stage-2023.jpg?rx=0&ry=1447&rw=8255&rh=3225&mw=1024&hash=C79D3CE37518908ACC1DCD24F190A126 1024w, /~/media/Beiersdorf/home-2019/stage/Beiersdorf-financial-publication-stage-2023.jpg?rx=0&ry=1447&rw=8255&rh=3225&mw=1280&hash=AB810C5130C215792E7C3D22484921B9 1280w, /~/media/Beiersdorf/home-2019/stage/Beiersdorf-financial-publication-stage-2023.jpg?rx=0&ry=1447&rw=8255&rh=3225&mw=1600&hash=CA8B98DF7B5DF7022809A541113FD4C5 1600w, /~/media/Beiersdorf/home-2019/stage/Beiersdorf-financial-publication-stage-2023.jpg?rx=0&ry=1447&rw=8255&rh=3225&mw=2000&hash=6656C0467E1DE6D64AA9319947484224 2000w, /~/media/Beiersdorf/home-2019/stage/Beiersdorf-financial-publication-stage-2023.jpg?rx=0&ry=1447&rw=8255&rh=3225&mw=2600&hash=EFD5689CA7B03A6B55E235094294A53C 2600w, /~/media/Beiersdorf/home-2019/stage/Beiersdorf-financial-publication-stage-2023.jpg?rx=0&ry=1447&rw=8255&rh=3225&mw=3700&hash=D25FAB5F211F6CFE2367C4689D99B781 3700w' sizes='100vw'><source media='(max-width: 767px)' data-srcset='/~/media/Beiersdorf/home-2019/stage/Beiersdorf-financial-publication-stage-2023.jpg?rx=2094&ry=387&rw=3291&rh=4213&mw=320&hash=A471478356E299C45FC7057E22F775DF 320w, /~/media/Beiersdorf/home-2019/stage/Beiersdorf-financial-publication-stage-2023.jpg?rx=2094&ry=387&rw=3291&rh=4213&mw=640&hash=13FAB7411A77953B93F97F6B8A804A84 640w, /~/media/Beiersdorf/home-2019/stage/Beiersdorf-financial-publication-stage-2023.jpg?rx=2094&ry=387&rw=3291&rh=4213&mw=830&hash=4E20BACCFB08792F11EBCFC0C88B1C25 830w, /~/media/Beiersdorf/home-2019/stage/Beiersdorf-financial-publication-stage-2023.jpg?rx=2094&ry=387&rw=3291&rh=4213&mw=1024&hash=C79D3CE37518908ACC1DCD24F190A126 1024w, /~/media/Beiersdorf/home-2019/stage/Beiersdorf-financial-publication-stage-2023.jpg?rx=2094&ry=387&rw=3291&rh=4213&mw=1400&hash=E25F3C1B3D5CB410E4FB81EEF7310D6B 1400w, /~/media/Beiersdorf/home-2019/stage/Beiersdorf-financial-publication-stage-2023.jpg?rx=2094&ry=387&rw=3291&rh=4213&mw=1920&hash=9D4295E0D70C7F7E96DEF169CA9BE426 1920w, /~/media/Beiersdorf/home-2019/stage/Beiersdorf-financial-publication-stage-2023.jpg?rx=2094&ry=387&rw=3291&rh=4213&mw=2380&hash=2CF6C77EC6B37EC305533F11692B759B 2380w' sizes='100vw'><img data-src='/~/media/Beiersdorf/home-2019/stage/Beiersdorf-financial-publication-stage-2023.jpg?rx=0&ry=1447&rw=8255&rh=3225' sizes='100vw' alt=''></picture>
+        <div class="cw-container">
+            <div class="row">
+                <section class="cw-stage-overlay cw-overlay--position-right" data-module="stageHeadlineResize">
+                        <h2>Quarterly Statement Jan. - Sept. 2026</h2>
+
+                        <div class="cw-text"><p>Beiersdorf will publish its Quarterly Statement January - September 2026 on October 27, 2026 at 08:00 CET.<br />
+</p></div>
+
+<a href="/investor-relations/financial-reports/financial-reports-and-presentations" class="cw-link" data-uk-scrollspy-class="uk-animation-fade" >Find out more</a>                </section>
+            </div>
+        </div>
+
+</li>
+
+<li>
+
+    
+<picture class='stage' ><source media='(min-width: 768px)' data-srcset='/~/media/asset-silo/c/6/9/01a03d4fa5b8703da946894811c38c7a-original.png?rx=0&ry=0&rw=1999&rh=781&mw=768&hash=532037B4F3401834FB59A3CD200AA957 768w, /~/media/asset-silo/c/6/9/01a03d4fa5b8703da946894811c38c7a-original.png?rx=0&ry=0&rw=1999&rh=781&mw=1024&hash=EAC8D60716683C907F7E600DF5C44EB3 1024w, /~/media/asset-silo/c/6/9/01a03d4fa5b8703da946894811c38c7a-original.png?rx=0&ry=0&rw=1999&rh=781&mw=1280&hash=6AEF0158FB00C1A36F080F8225A35854 1280w, /~/media/asset-silo/c/6/9/01a03d4fa5b8703da946894811c38c7a-original.png?rx=0&ry=0&rw=1999&rh=781&mw=1600&hash=61A9F30B5D0D3A26055E4E8B6203037E 1600w' sizes='100vw'><!-- Widths 2000,2600,3700 too large for the selected image --><source media='(max-width: 767px)' data-srcset='/~/media/asset-silo/c/6/9/01a03d4fa5b8703da946894811c38c7a-original.png?rx=85&ry=0&rw=610&rh=781&mw=320&hash=35E165665ED33B5D47164645AA115AA3 320w' sizes='100vw'><!-- Widths 640,830,1024,1400,1920,2380 too large for the selected image --><img data-src='/~/media/asset-silo/c/6/9/01a03d4fa5b8703da946894811c38c7a-original.png?rx=0&ry=0&rw=1999&rh=781' sizes='100vw' alt=''></picture>
+        <div class="cw-container">
+            <div class="row">
+                <section class="cw-stage-overlay cw-overlay--position-right" data-module="stageHeadlineResize">
+                        <h2>A NEW ERA IN ACNE-PRONE SKIN CARE</h2>
+
+                        <div class="cw-text"><p>PROBIOM8 is our first skin care routine with viable, skin-native probiotics to support a balanced skin microbiome.</p></div>
+
+<a href="/newsroom/press-information/all-press-releases/2026/09/01-beiersdorf-strengthens-derma-business-with-microbiome-technology" class="cw-link" data-uk-scrollspy-class="uk-animation-fade" >DISCOVER PROBIOM8</a>                </section>
+            </div>
+        </div>
+
+</li>
+
+<li>
+
+    
+<picture class='stage' ><source media='(min-width: 768px)' data-srcset='/~/media/asset-silo/4/8/4/3c86f3183f854bf9ae04f485120a748d-jpg_3840x3840_scaled_q100_300dpi.jpg?rx=0&ry=0&rw=3840&rh=1500&mw=768&hash=F717BA41AA6D45C3A0AD41AAFD8BB99D 768w, /~/media/asset-silo/4/8/4/3c86f3183f854bf9ae04f485120a748d-jpg_3840x3840_scaled_q100_300dpi.jpg?rx=0&ry=0&rw=3840&rh=1500&mw=1024&hash=83FAB2246967F0B85C2E05DAF076DEE5 1024w, /~/media/asset-silo/4/8/4/3c86f3183f854bf9ae04f485120a748d-jpg_3840x3840_scaled_q100_300dpi.jpg?rx=0&ry=0&rw=3840&rh=1500&mw=1280&hash=750CEEF4A8052D58BFDDCC9567C309E1 1280w, /~/media/asset-silo/4/8/4/3c86f3183f854bf9ae04f485120a748d-jpg_3840x3840_scaled_q100_300dpi.jpg?rx=0&ry=0&rw=3840&rh=1500&mw=1600&hash=B4D6064A31E495B37441A4B092FDEBF1 1600w, /~/media/asset-silo/4/8/4/3c86f3183f854bf9ae04f485120a748d-jpg_3840x3840_scaled_q100_300dpi.jpg?rx=0&ry=0&rw=3840&rh=1500&mw=2000&hash=89F2535AC10E734B3E6CB3FFFFE99277 2000w, /~/media/asset-silo/4/8/4/3c86f3183f854bf9ae04f485120a748d-jpg_3840x3840_scaled_q100_300dpi.jpg?rx=0&ry=0&rw=3840&rh=1500&mw=2600&hash=0EE094A7EAC1F15ABB674B541A7C9FE8 2600w, /~/media/asset-silo/4/8/4/3c86f3183f854bf9ae04f485120a748d-jpg_3840x3840_scaled_q100_300dpi.jpg?rx=0&ry=0&rw=3840&rh=1500&mw=3700&hash=62BD55DF337EFFE2DCCF111D5C823B6C 3700w' sizes='100vw'><source media='(max-width: 767px)' data-srcset='/~/media/asset-silo/4/8/4/3c86f3183f854bf9ae04f485120a748d-jpg_3840x3840_scaled_q100_300dpi.jpg?rx=1621&ry=0&rw=1171&rh=1500&mw=320&hash=9AF164E00866F3C568D9947AB8AE63D2 320w, /~/media/asset-silo/4/8/4/3c86f3183f854bf9ae04f485120a748d-jpg_3840x3840_scaled_q100_300dpi.jpg?rx=1621&ry=0&rw=1171&rh=1500&mw=640&hash=C3AE6CA242949638A96E54197A8CAFEE 640w, /~/media/asset-silo/4/8/4/3c86f3183f854bf9ae04f485120a748d-jpg_3840x3840_scaled_q100_300dpi.jpg?rx=1621&ry=0&rw=1171&rh=1500&mw=830&hash=E58A8B95A0246CDFC1BE96FBC74155E1 830w, /~/media/asset-silo/4/8/4/3c86f3183f854bf9ae04f485120a748d-jpg_3840x3840_scaled_q100_300dpi.jpg?rx=1621&ry=0&rw=1171&rh=1500&mw=1024&hash=83FAB2246967F0B85C2E05DAF076DEE5 1024w' sizes='100vw'><!-- Widths 1400,1920,2380 too large for the selected image --><img data-src='/~/media/asset-silo/4/8/4/3c86f3183f854bf9ae04f485120a748d-jpg_3840x3840_scaled_q100_300dpi.jpg?rx=0&ry=0&rw=3840&rh=1500' sizes='100vw' alt=''></picture>
+        <div class="cw-container">
+            <div class="row">
+                <section class="cw-stage-overlay cw-overlay--position-left" data-module="stageHeadlineResize">
+                        <h2>THE INVENTORS OF MODERN SKIN CARE</h2>
+
+                        <div class="cw-text"><p>Beiersdorf is a global leader in skin care,
+driven by over 140 years of innovation and care. Since 1882, we have made
+people feel good in their skin.&nbsp;</p></div>
+
+<a href="/about-us" class="cw-link" data-uk-scrollspy-class="uk-animation-fade" >DISCOVER BEIERSDORF</a>                </section>
+            </div>
+        </div>
+
+</li>
+
+<li>
+
+    
+<picture class='stage' ><source media='(min-width: 768px)' data-srcset='/~/media/asset-silo/e/a/f/33c3a9c6c4184e0692ad173969d4b470-original.jpg?rx=0&ry=0&rw=4999&rh=1953&mw=768&hash=E5AB2A959E9B7C90CD245907B01E6255 768w, /~/media/asset-silo/e/a/f/33c3a9c6c4184e0692ad173969d4b470-original.jpg?rx=0&ry=0&rw=4999&rh=1953&mw=1024&hash=E8C7F57A0167CD376F6719C2A028500A 1024w, /~/media/asset-silo/e/a/f/33c3a9c6c4184e0692ad173969d4b470-original.jpg?rx=0&ry=0&rw=4999&rh=1953&mw=1280&hash=053F5EA60FDCC1D983FC2856F788F020 1280w, /~/media/asset-silo/e/a/f/33c3a9c6c4184e0692ad173969d4b470-original.jpg?rx=0&ry=0&rw=4999&rh=1953&mw=1600&hash=F0B7FD24B9314B65A4713D842304BBFE 1600w, /~/media/asset-silo/e/a/f/33c3a9c6c4184e0692ad173969d4b470-original.jpg?rx=0&ry=0&rw=4999&rh=1953&mw=2000&hash=37AD7FFE02978E320D607979E6F2DFD4 2000w, /~/media/asset-silo/e/a/f/33c3a9c6c4184e0692ad173969d4b470-original.jpg?rx=0&ry=0&rw=4999&rh=1953&mw=2600&hash=8E47850ABC1131057AC0FA7378154A3C 2600w, /~/media/asset-silo/e/a/f/33c3a9c6c4184e0692ad173969d4b470-original.jpg?rx=0&ry=0&rw=4999&rh=1953&mw=3700&hash=88137AAFEC9AEFDC46409FC133F6B87E 3700w' sizes='100vw'><source media='(max-width: 767px)' data-srcset='/~/media/asset-silo/e/a/f/33c3a9c6c4184e0692ad173969d4b470-original.jpg?rx=215&ry=0&rw=1525&rh=1953&mw=320&hash=8C01A0C8E1FCF5DD1DF09323D310000B 320w, /~/media/asset-silo/e/a/f/33c3a9c6c4184e0692ad173969d4b470-original.jpg?rx=215&ry=0&rw=1525&rh=1953&mw=640&hash=93D9B06A098C8511A6B3C710F4B4B23A 640w, /~/media/asset-silo/e/a/f/33c3a9c6c4184e0692ad173969d4b470-original.jpg?rx=215&ry=0&rw=1525&rh=1953&mw=830&hash=41AC1D1354E0B2671E12FB3445BDC986 830w, /~/media/asset-silo/e/a/f/33c3a9c6c4184e0692ad173969d4b470-original.jpg?rx=215&ry=0&rw=1525&rh=1953&mw=1024&hash=E8C7F57A0167CD376F6719C2A028500A 1024w, /~/media/asset-silo/e/a/f/33c3a9c6c4184e0692ad173969d4b470-original.jpg?rx=215&ry=0&rw=1525&rh=1953&mw=1400&hash=1B36BD360D518FF228D564DCE1B28402 1400w' sizes='100vw'><!-- Widths 1920,2380 too large for the selected image --><img data-src='/~/media/asset-silo/e/a/f/33c3a9c6c4184e0692ad173969d4b470-original.jpg?rx=0&ry=0&rw=4999&rh=1953' sizes='100vw' alt=''></picture>
+        <div class="cw-container">
+            <div class="row">
+                <section class="cw-stage-overlay cw-overlay--position-right" data-module="stageHeadlineResize">
+                        <h2>ICONIC SKIN CARE BRANDS</h2>
+
+                        <div class="cw-text"><p>All over the world, millions of consumers
+start and end their day with our Beiersdorf products. We are proud of our strong
+portfolio full of pioneering innovation.</p></div>
+
+<a href="/brands" class="cw-link" data-uk-scrollspy-class="uk-animation-fade" >DISCOVER OUR BRANDS</a>                </section>
+            </div>
+        </div>
+
+</li>
+
+<li>
+
+    
+<picture class='stage' ><source media='(min-width: 768px)' data-srcset='/~/media/asset-silo/0/4/6/01a03d4fa3217e6e829b0e5553c56999-screen.jpg?rx=0&ry=0&rw=1600&rh=625&mw=768&hash=A0E20F8A410642F7650A97283D9709F8 768w, /~/media/asset-silo/0/4/6/01a03d4fa3217e6e829b0e5553c56999-screen.jpg?rx=0&ry=0&rw=1600&rh=625&mw=1024&hash=3F86246DD7E8DD66E3D68534F918F35C 1024w, /~/media/asset-silo/0/4/6/01a03d4fa3217e6e829b0e5553c56999-screen.jpg?rx=0&ry=0&rw=1600&rh=625&mw=1280&hash=3F889611C95EA237B5BDBF1BA9160B6E 1280w, /~/media/asset-silo/0/4/6/01a03d4fa3217e6e829b0e5553c56999-screen.jpg?rx=0&ry=0&rw=1600&rh=625&mw=1600&hash=8A53B3C5585E92A1CE116D9F7F73367A 1600w' sizes='100vw'><!-- Widths 2000,2600,3700 too large for the selected image --><source media='(max-width: 767px)' data-srcset='/~/media/asset-silo/0/4/6/01a03d4fa3217e6e829b0e5553c56999-screen.jpg?rx=232&ry=0&rw=488&rh=625&mw=320&hash=B6FA742D4A2E838040E92F713614CABD 320w' sizes='100vw'><!-- Widths 640,830,1024,1400,1920,2380 too large for the selected image --><img data-src='/~/media/asset-silo/0/4/6/01a03d4fa3217e6e829b0e5553c56999-screen.jpg?rx=0&ry=0&rw=1600&rh=625' sizes='100vw' alt=''></picture>
+        <div class="cw-container">
+            <div class="row">
+                <section class="cw-stage-overlay cw-overlay--position-right" data-module="stageHeadlineResize">
+                        <h2>GAME-CHANGER FOR SKIN TONE MANAGEMENT</h2>
+
+                        <div class="cw-text"><p>Thiamidol&reg; is our signature ingredient that
+helps you manage your skin tone. It is our most effective ingredient against
+all major forms of hyperpigmentation.<br />
+</p></div>
+
+<a href="/newsroom/press-information/all-press-releases/2025/12/10-leading-global-experts-on-hyperpigmentation" class="cw-link" data-uk-scrollspy-class="uk-animation-fade" >DISCOVER THIAMIDOL®</a>                </section>
+            </div>
+        </div>
+
+</li>
+
+<li>
+
+    
+<picture class='stage' ><source media='(min-width: 768px)' data-srcset='/~/media/asset-silo/d/1/a/057698a8430a43a09b6a3be9484db31f-original.jpg?rx=0&ry=0&rw=4999&rh=1953&mw=768&hash=EB14F824EEEDEC1B204BE5A2AE180F56 768w, /~/media/asset-silo/d/1/a/057698a8430a43a09b6a3be9484db31f-original.jpg?rx=0&ry=0&rw=4999&rh=1953&mw=1024&hash=67A2BB53A67285C07E9BF79327681B7B 1024w, /~/media/asset-silo/d/1/a/057698a8430a43a09b6a3be9484db31f-original.jpg?rx=0&ry=0&rw=4999&rh=1953&mw=1280&hash=8A37A75DECEC6B405BEB67FBE52DBE18 1280w, /~/media/asset-silo/d/1/a/057698a8430a43a09b6a3be9484db31f-original.jpg?rx=0&ry=0&rw=4999&rh=1953&mw=1600&hash=410F16208927100EBAE8DAA34ECA09CE 1600w, /~/media/asset-silo/d/1/a/057698a8430a43a09b6a3be9484db31f-original.jpg?rx=0&ry=0&rw=4999&rh=1953&mw=2000&hash=5A32DABF7629604BAAADDE050A64936D 2000w, /~/media/asset-silo/d/1/a/057698a8430a43a09b6a3be9484db31f-original.jpg?rx=0&ry=0&rw=4999&rh=1953&mw=2600&hash=06D9A28858DDDB969525FCAED974D543 2600w, /~/media/asset-silo/d/1/a/057698a8430a43a09b6a3be9484db31f-original.jpg?rx=0&ry=0&rw=4999&rh=1953&mw=3700&hash=B85EE74DCD717650C7D80D32DBB7B5A3 3700w' sizes='100vw'><source media='(max-width: 767px)' data-srcset='/~/media/asset-silo/d/1/a/057698a8430a43a09b6a3be9484db31f-original.jpg?rx=1997&ry=0&rw=1525&rh=1953&mw=320&hash=4289B17E859EEA0EE808192EC6893DA2 320w, /~/media/asset-silo/d/1/a/057698a8430a43a09b6a3be9484db31f-original.jpg?rx=1997&ry=0&rw=1525&rh=1953&mw=640&hash=43D8ABFDCDCF17D5E06C20F1EF52E181 640w, /~/media/asset-silo/d/1/a/057698a8430a43a09b6a3be9484db31f-original.jpg?rx=1997&ry=0&rw=1525&rh=1953&mw=830&hash=5F76C7083D6F78D66BF935CDF7C2E03C 830w, /~/media/asset-silo/d/1/a/057698a8430a43a09b6a3be9484db31f-original.jpg?rx=1997&ry=0&rw=1525&rh=1953&mw=1024&hash=67A2BB53A67285C07E9BF79327681B7B 1024w, /~/media/asset-silo/d/1/a/057698a8430a43a09b6a3be9484db31f-original.jpg?rx=1997&ry=0&rw=1525&rh=1953&mw=1400&hash=2BCD889B93397D762E52A723F9400917 1400w' sizes='100vw'><!-- Widths 1920,2380 too large for the selected image --><img data-src='/~/media/asset-silo/d/1/a/057698a8430a43a09b6a3be9484db31f-original.jpg?rx=0&ry=0&rw=4999&rh=1953' sizes='100vw' alt=''></picture>
+        <div class="cw-container">
+            <div class="row">
+                <section class="cw-stage-overlay cw-overlay--position-left" data-module="stageHeadlineResize">
+                        <h2>SHAPE WHAT’S NEXT IN SKIN CARE</h2>
+
+                        <div class="cw-text"><p>Join a team with ambitious goals and a heart
+full of care.</p></div>
+
+<a href="/career/overview" class="cw-link" data-uk-scrollspy-class="uk-animation-fade" >JOIN BEIERSDORF</a>                </section>
+            </div>
+        </div>
+
+</li>
+
+<li>
+
+    
+<picture class='stage' ><source media='(min-width: 768px)' data-srcset='/~/media/asset-silo/6/9/2/a8e79d6e744f4a058118564f096d88e0-jpg_3840x3840_scaled_q100_300dpi.jpg?rx=0&ry=0&rw=3840&rh=1500&mw=768&hash=301DED07A038A4D4D2610E50931A05BA 768w, /~/media/asset-silo/6/9/2/a8e79d6e744f4a058118564f096d88e0-jpg_3840x3840_scaled_q100_300dpi.jpg?rx=0&ry=0&rw=3840&rh=1500&mw=1024&hash=E0E1EF5718EEBD78E255BBBB8C02B2AC 1024w, /~/media/asset-silo/6/9/2/a8e79d6e744f4a058118564f096d88e0-jpg_3840x3840_scaled_q100_300dpi.jpg?rx=0&ry=0&rw=3840&rh=1500&mw=1280&hash=35A4C0A8048A9BAB439440EDB4716A71 1280w, /~/media/asset-silo/6/9/2/a8e79d6e744f4a058118564f096d88e0-jpg_3840x3840_scaled_q100_300dpi.jpg?rx=0&ry=0&rw=3840&rh=1500&mw=1600&hash=0C2BBB22137EFA4461F12F267DE73246 1600w, /~/media/asset-silo/6/9/2/a8e79d6e744f4a058118564f096d88e0-jpg_3840x3840_scaled_q100_300dpi.jpg?rx=0&ry=0&rw=3840&rh=1500&mw=2000&hash=226D8EEF56CEA5342FAA1DB92BD25691 2000w, /~/media/asset-silo/6/9/2/a8e79d6e744f4a058118564f096d88e0-jpg_3840x3840_scaled_q100_300dpi.jpg?rx=0&ry=0&rw=3840&rh=1500&mw=2600&hash=B781ACE03ACECDBE8C9E0826EC0D7155 2600w, /~/media/asset-silo/6/9/2/a8e79d6e744f4a058118564f096d88e0-jpg_3840x3840_scaled_q100_300dpi.jpg?rx=0&ry=0&rw=3840&rh=1500&mw=3700&hash=E0D33CC40F5963A7660C9A45B2FD8C2F 3700w' sizes='100vw'><source media='(max-width: 767px)' data-srcset='/~/media/asset-silo/6/9/2/a8e79d6e744f4a058118564f096d88e0-jpg_3840x3840_scaled_q100_300dpi.jpg?rx=1153&ry=0&rw=1171&rh=1500&mw=320&hash=F568936C2E4A2F558F78A4CE4E5F6DB3 320w, /~/media/asset-silo/6/9/2/a8e79d6e744f4a058118564f096d88e0-jpg_3840x3840_scaled_q100_300dpi.jpg?rx=1153&ry=0&rw=1171&rh=1500&mw=640&hash=E1029608FC72D11FE73A9AEF8430B20D 640w, /~/media/asset-silo/6/9/2/a8e79d6e744f4a058118564f096d88e0-jpg_3840x3840_scaled_q100_300dpi.jpg?rx=1153&ry=0&rw=1171&rh=1500&mw=830&hash=18CDD56BFA3FE381EE2CCCE7FF50AE22 830w, /~/media/asset-silo/6/9/2/a8e79d6e744f4a058118564f096d88e0-jpg_3840x3840_scaled_q100_300dpi.jpg?rx=1153&ry=0&rw=1171&rh=1500&mw=1024&hash=E0E1EF5718EEBD78E255BBBB8C02B2AC 1024w' sizes='100vw'><!-- Widths 1400,1920,2380 too large for the selected image --><img data-src='/~/media/asset-silo/6/9/2/a8e79d6e744f4a058118564f096d88e0-jpg_3840x3840_scaled_q100_300dpi.jpg?rx=0&ry=0&rw=3840&rh=1500' sizes='100vw' alt='EPICELLINE®'></picture>
+        <div class="cw-container">
+            <div class="row">
+                <section class="cw-stage-overlay cw-overlay--position-right" data-module="stageHeadlineResize">
+                        <h2>A MILESTONE IN SKIN REJUVENATION</h2>
+
+                        <div class="cw-text"><p>Learn about our breakthrough epigenetic
+ingredient EPICELLINE&reg;, which reverses skin age and activates skin longevity.</p></div>
+
+<a href="/research/our-expertise/epigenetics" class="cw-link" data-uk-scrollspy-class="uk-animation-fade" >DISCOVER EPICELLINE®</a>                </section>
+            </div>
+        </div>
+
+</li>
+            </ul>
+        </div>
+
+        <div class="cw-controls cw-stage__controls">
+            <a class="cw-slider__arrow--left" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+            <a class="cw-slider__arrow--right" href="#" uk-slidenav-next uk-slider-item="next"></a>
+        </div>
+        <div class="cw-slider-timer">
+            <div class="cw-time-progres" style="-webkit-animation-duration: 12000ms; animation-duration: 12000ms;"></div>
+        </div>
+    </div>
+
+</section>
+            
+            
+            
+
+<section class="cw-cp cw-teaser-grid">
+    
+    <div class="cw-container">
+
+        <div class="cw-teaser-grid_header">
+            <h2 class="headline cw-h2-headline cw-h2-headline--blue">
+What’s new            </h2>
+                <span class="quick-links">
+                    <a href="/newsroom" title="Press" >Press</a>
+                </span>
+
+        </div>
+        <div class="teaser-items blog-news-teaser" data-module="TeaserGrid">
+                <div class="news-teaser-items uk-slider-items">
+
+
+<article class="news-teaser" data-module="TeaserHoverEffect" data-type="news-teaser">
+<a href="/newsroom/press-information/all-press-releases/2026/09/01-beiersdorf-strengthens-derma-business-with-microbiome-technology" class="link" >            <figure>
+                <img data-src='/~/media/Beiersdorf/newsroom/press-releases/2026/2026-09-01-Beiersdorf-strengthens-derma-business-with-microbiome-technology/2026-09-01-Beiersdorf-strengthens-derma-business-with-microbiome-technology-teaser.png?rx=0&ry=0&rw=1388&rh=781' data-srcset='/~/media/Beiersdorf/newsroom/press-releases/2026/2026-09-01-Beiersdorf-strengthens-derma-business-with-microbiome-technology/2026-09-01-Beiersdorf-strengthens-derma-business-with-microbiome-technology-teaser.png?rx=0&ry=0&rw=1388&rh=781&mw=200&hash=C6525EE0E89A97583AB816EA93273565 200w, /~/media/Beiersdorf/newsroom/press-releases/2026/2026-09-01-Beiersdorf-strengthens-derma-business-with-microbiome-technology/2026-09-01-Beiersdorf-strengthens-derma-business-with-microbiome-technology-teaser.png?rx=0&ry=0&rw=1388&rh=781&mw=400&hash=DD86C2FAB3AFE67756FE3789EE6CCD3F 400w, /~/media/Beiersdorf/newsroom/press-releases/2026/2026-09-01-Beiersdorf-strengthens-derma-business-with-microbiome-technology/2026-09-01-Beiersdorf-strengthens-derma-business-with-microbiome-technology-teaser.png?rx=0&ry=0&rw=1388&rh=781&mw=600&hash=9692CB4212C1D5149A291E15740CE486 600w, /~/media/Beiersdorf/newsroom/press-releases/2026/2026-09-01-Beiersdorf-strengthens-derma-business-with-microbiome-technology/2026-09-01-Beiersdorf-strengthens-derma-business-with-microbiome-technology-teaser.png?rx=0&ry=0&rw=1388&rh=781&mw=800&hash=9128941EE8FCAB691552BB29AF63D9C4 800w, /~/media/Beiersdorf/newsroom/press-releases/2026/2026-09-01-Beiersdorf-strengthens-derma-business-with-microbiome-technology/2026-09-01-Beiersdorf-strengthens-derma-business-with-microbiome-technology-teaser.png?rx=0&ry=0&rw=1388&rh=781&mw=1000&hash=775104E3E024991771DDEEF37B737140 1000w, /~/media/Beiersdorf/newsroom/press-releases/2026/2026-09-01-Beiersdorf-strengthens-derma-business-with-microbiome-technology/2026-09-01-Beiersdorf-strengthens-derma-business-with-microbiome-technology-teaser.png?rx=0&ry=0&rw=1388&rh=781&mw=1200&hash=276F3BE1CB04255FCF29D9FA3C527A3B 1200w' alt='' class='img' uk-img='' >
+            </figure>
+        <div class="description-teaser">
+            <div class="swipe-items">
+                <span class="grid-arrow arrow-down"></span>
+                    <div class="type">Press Release</div>
+
+                    <div class="title">Beiersdorf Strengthens Derma Business</div>
+
+                    <div class="description">
+                        <p>
+                            <p>With Eucerin DERMOPURE CLINICAL PROBIOM8,
+Beiersdorf is introducing a new skin care approach for acne-prone skin.</p>
+                        </p>
+                    </div>
+            </div>
+            <div class="static-items">
+                    <div class="tag">Research &amp; Development</div>
+
+                    <div class="date">9/1/2026</div>
+            </div>
+        </div>
+</a></article>
+
+<article class="news-teaser" data-module="TeaserHoverEffect" data-type="news-teaser">
+<a href="/newsroom/press-information/all-press-releases/2026/08/03-half-year-results-2026" class="link" >            <figure>
+                <img data-src='/~/media/Beiersdorf/investors/teaser/Beiersdorf-Financial-Publications-2026/half-year/Beiersdorf-Half-Year-Results-2026.JPG?rx=0&ry=338&rw=1279&rh=719' data-srcset='/~/media/Beiersdorf/investors/teaser/Beiersdorf-Financial-Publications-2026/half-year/Beiersdorf-Half-Year-Results-2026.JPG?rx=0&ry=338&rw=1279&rh=719&mw=200&hash=29FF3347CB9E2AFC485F3D3F9C542826 200w, /~/media/Beiersdorf/investors/teaser/Beiersdorf-Financial-Publications-2026/half-year/Beiersdorf-Half-Year-Results-2026.JPG?rx=0&ry=338&rw=1279&rh=719&mw=400&hash=046BACE294AE9BEDADF5435061976CAD 400w, /~/media/Beiersdorf/investors/teaser/Beiersdorf-Financial-Publications-2026/half-year/Beiersdorf-Half-Year-Results-2026.JPG?rx=0&ry=338&rw=1279&rh=719&mw=600&hash=A5C8FA5544B6ECCED334505C821872ED 600w, /~/media/Beiersdorf/investors/teaser/Beiersdorf-Financial-Publications-2026/half-year/Beiersdorf-Half-Year-Results-2026.JPG?rx=0&ry=338&rw=1279&rh=719&mw=800&hash=4EBE98520BC69DE47E8DAA89B889B7C6 800w, /~/media/Beiersdorf/investors/teaser/Beiersdorf-Financial-Publications-2026/half-year/Beiersdorf-Half-Year-Results-2026.JPG?rx=0&ry=338&rw=1279&rh=719&mw=1000&hash=A5C541DDD34F4E6D3277E74239840993 1000w, /~/media/Beiersdorf/investors/teaser/Beiersdorf-Financial-Publications-2026/half-year/Beiersdorf-Half-Year-Results-2026.JPG?rx=0&ry=338&rw=1279&rh=719&mw=1200&hash=F430F161BDC76C9AC8B0343F17886D41 1200w' alt='' class='img' uk-img='' >
+            </figure>
+        <div class="description-teaser">
+            <div class="swipe-items">
+                <span class="grid-arrow arrow-down"></span>
+                    <div class="type">Press Release</div>
+
+                    <div class="title">Half-year results 2026</div>
+
+                    <div class="description">
+                        <p>
+                            <p>Derma outperformance continues, NIVEA enters next phase of rebalancing with 18-month turnaround plan</p>
+                        </p>
+                    </div>
+            </div>
+            <div class="static-items">
+                    <div class="tag">Finance &amp; Business</div>
+
+                    <div class="date">8/3/2026</div>
+            </div>
+        </div>
+</a></article>
+
+<article class="news-teaser" data-module="TeaserHoverEffect" data-type="news-teaser">
+<a href="/newsroom/press-news/all-news/2026/08/03-beiersdorf-adjusts-guidance-for-the-full-year-2026" class="link" >            <figure>
+                <img data-src='/~/media/Beiersdorf/investors/teaser/Beiersdorf-ad-hoc-en-2021.png?rx=0&ry=0&rw=939&rh=528' data-srcset='/~/media/Beiersdorf/investors/teaser/Beiersdorf-ad-hoc-en-2021.png?rx=0&ry=0&rw=939&rh=528&mw=200&hash=934DDB4D9B5F4196F5842A494107FA53 200w, /~/media/Beiersdorf/investors/teaser/Beiersdorf-ad-hoc-en-2021.png?rx=0&ry=0&rw=939&rh=528&mw=400&hash=DAEA447E32121F9DFB94C4A9F36219B2 400w, /~/media/Beiersdorf/investors/teaser/Beiersdorf-ad-hoc-en-2021.png?rx=0&ry=0&rw=939&rh=528&mw=600&hash=B623AFB7244EB1782C1786D58FBBDEE4 600w, /~/media/Beiersdorf/investors/teaser/Beiersdorf-ad-hoc-en-2021.png?rx=0&ry=0&rw=939&rh=528&mw=800&hash=55043746BA169B4EC75E609BFA47E8E9 800w' alt='Ad Hoc Disclosure' class='img' uk-img='' ><!-- Widths 1000,1200 too large for the selected image -->
+            </figure>
+        <div class="description-teaser">
+            <div class="swipe-items">
+                <span class="grid-arrow arrow-down"></span>
+                    <div class="type">News</div>
+
+                    <div class="title">Beiersdorf adjusts guidance for the full year 2026</div>
+
+                    <div class="description">
+                        <p>
+                            <p>and resolves NIVEA turnaround plan for the next 18 months</p>
+                        </p>
+                    </div>
+            </div>
+            <div class="static-items">
+                    <div class="tag">Ad Hoc Disclosures</div>
+
+                    <div class="date">8/3/2026</div>
+            </div>
+        </div>
+</a></article>                </div>
+
+            <ul class="uk-slider-nav uk-dotnav uk-flex-center"></ul>
+        </div>
+    </div>
+</section>
+
+<section class="cw-cp cw-teaser-grid">
+    
+    <div class="cw-container">
+
+        <div class="cw-teaser-grid_header">
+            <h2 class="headline cw-h2-headline cw-h2-headline--blue">
+More Stories            </h2>
+                <span class="quick-links">
+                    <a href="/blog" title="Our Blog" >Our Blog</a>
+                </span>
+
+        </div>
+        <div class="teaser-items blog-news-teaser" data-module="TeaserGrid">
+                <div class="news-teaser-items uk-slider-items">
+
+
+
+    <article class="blog-teaser" data-module="TeaserHoverEffect" data-type="blog-teaser">
+<a href="/blog/stories/blog-story/2026/09/14-nivea-face-plus-arrives-in-europe" class="link" >                <figure>
+                    <img data-src='/~/media/Beiersdorf/blog/2026/2026-09-14-nivea-face-plus-arrives-in-europe/Beiersdorf-Face-Group.jpg?rx=4&ry=0&rw=2483&rh=1397' data-srcset='/~/media/Beiersdorf/blog/2026/2026-09-14-nivea-face-plus-arrives-in-europe/Beiersdorf-Face-Group.jpg?rx=4&ry=0&rw=2483&rh=1397&mw=200&hash=FF06A73BB007B30DD158BABF6ACA58AF 200w, /~/media/Beiersdorf/blog/2026/2026-09-14-nivea-face-plus-arrives-in-europe/Beiersdorf-Face-Group.jpg?rx=4&ry=0&rw=2483&rh=1397&mw=400&hash=8F52CB90FDD6CA2C8BDDAC16954A51A1 400w, /~/media/Beiersdorf/blog/2026/2026-09-14-nivea-face-plus-arrives-in-europe/Beiersdorf-Face-Group.jpg?rx=4&ry=0&rw=2483&rh=1397&mw=600&hash=EB24578F680CE635F0A5A0ECD819A5F0 600w, /~/media/Beiersdorf/blog/2026/2026-09-14-nivea-face-plus-arrives-in-europe/Beiersdorf-Face-Group.jpg?rx=4&ry=0&rw=2483&rh=1397&mw=800&hash=0213CFCD34734E4AEE210DB23CCF2CC7 800w, /~/media/Beiersdorf/blog/2026/2026-09-14-nivea-face-plus-arrives-in-europe/Beiersdorf-Face-Group.jpg?rx=4&ry=0&rw=2483&rh=1397&mw=1000&hash=2ED88E6603F30AB4FC2B637AF5B84E25 1000w, /~/media/Beiersdorf/blog/2026/2026-09-14-nivea-face-plus-arrives-in-europe/Beiersdorf-Face-Group.jpg?rx=4&ry=0&rw=2483&rh=1397&mw=1200&hash=9A5205F5689C92BC8E5E90202FA0CFD9 1200w' alt='People smiling and showing NIVEA FACE+ cream jars in turquoise, orange, blue, and violet, each featuring the NIVEA FACE+ logo and a distinctive color-coded design.' class='img' uk-img='' >
+                </figure>
+            <div class="description-teaser">
+                <div class="swipe-items">
+                    <span class="grid-arrow arrow-down"></span>
+                        <div class="type">Blog</div>
+
+                        <div class="title">NIVEA FACE+ Arrives in Europe</div>
+
+                        <div class="description">
+                            <p>
+                                <p>NIVEA FACE+ arrives in Europe with four moisturizers that make finding
+the right skin care solution simple and accessible.</p>
+                            </p>
+                        </div>
+                </div>
+                <div class="static-items">
+                        <div class="tag">Brands</div>
+
+                        <div class="date">9/14/2026</div>
+                </div>
+            </div>
+</a>    </article>
+
+
+
+    <article class="blog-teaser" data-module="TeaserHoverEffect" data-type="blog-teaser">
+<a href="/blog/stories/blog-story/2026/09/08-how-epigenetics-can-improve-skin-longevity-insights-from-17-years-of-beiersdorf-research" class="link" >                <figure>
+                    <img data-src='/~/media/asset-silo/b/0/2/01a066f5cbd8728ba8075c4b84645094-screen.jpg?rx=0&ry=0&rw=1600&rh=900' data-srcset='/~/media/asset-silo/b/0/2/01a066f5cbd8728ba8075c4b84645094-screen.jpg?rx=0&ry=0&rw=1600&rh=900&mw=200&hash=CD4789EB29650CFD857212DE61B55A90 200w, /~/media/asset-silo/b/0/2/01a066f5cbd8728ba8075c4b84645094-screen.jpg?rx=0&ry=0&rw=1600&rh=900&mw=400&hash=96AB352DB8C68F45505652BB64D7A9DB 400w, /~/media/asset-silo/b/0/2/01a066f5cbd8728ba8075c4b84645094-screen.jpg?rx=0&ry=0&rw=1600&rh=900&mw=600&hash=846FE7EA4F98E5962B88BFC90DD51CAA 600w, /~/media/asset-silo/b/0/2/01a066f5cbd8728ba8075c4b84645094-screen.jpg?rx=0&ry=0&rw=1600&rh=900&mw=800&hash=64B10A614A2B6DE10B2FAAA2FBACD597 800w, /~/media/asset-silo/b/0/2/01a066f5cbd8728ba8075c4b84645094-screen.jpg?rx=0&ry=0&rw=1600&rh=900&mw=1000&hash=C139BAB732B268B4185BDC602EAF4271 1000w, /~/media/asset-silo/b/0/2/01a066f5cbd8728ba8075c4b84645094-screen.jpg?rx=0&ry=0&rw=1600&rh=900&mw=1200&hash=CC3EDADB1092AEBD511F36C42240B8AD 1200w' alt='Person with glowing blue lines on their face against a cloudy sky.' class='img' uk-img='' >
+                </figure>
+            <div class="description-teaser">
+                <div class="swipe-items">
+                    <span class="grid-arrow arrow-down"></span>
+                        <div class="type">Blog</div>
+
+                        <div class="title">Epigenetics & Skin Longevity: 17 Years of Beiersdorf Research</div>
+
+                        <div class="description">
+                            <p>
+                                <p>Beiersdorf is stepping up its epigenetics research. New studies prove the high efficacy of epigenetic ingredients in skin care products.</p>
+                            </p>
+                        </div>
+                </div>
+                <div class="static-items">
+                        <div class="tag">Innovation</div>
+
+                        <div class="date">9/8/2026</div>
+                </div>
+            </div>
+</a>    </article>
+
+
+
+    <article class="blog-teaser" data-module="TeaserHoverEffect" data-type="blog-teaser">
+<a href="/blog/stories/blog-story/2026/06/23-pioneering-the-real-skin-microbiome-science" class="link" >                <figure>
+                    <img data-src='/~/media/Beiersdorf/blog/2026/2026-06-23-we-are-designers-of-the-skin-microbiome/Image_0_thumbnail.jpg?rx=0&ry=817&rw=6880&rh=3870' data-srcset='/~/media/Beiersdorf/blog/2026/2026-06-23-we-are-designers-of-the-skin-microbiome/Image_0_thumbnail.jpg?rx=0&ry=817&rw=6880&rh=3870&mw=200&hash=109540EEA0375116C99D5F840784CCD7 200w, /~/media/Beiersdorf/blog/2026/2026-06-23-we-are-designers-of-the-skin-microbiome/Image_0_thumbnail.jpg?rx=0&ry=817&rw=6880&rh=3870&mw=400&hash=E5755440801FFF4D86BC87500A1FA106 400w, /~/media/Beiersdorf/blog/2026/2026-06-23-we-are-designers-of-the-skin-microbiome/Image_0_thumbnail.jpg?rx=0&ry=817&rw=6880&rh=3870&mw=600&hash=593037F123089A9E921D0EF0E48F7C43 600w, /~/media/Beiersdorf/blog/2026/2026-06-23-we-are-designers-of-the-skin-microbiome/Image_0_thumbnail.jpg?rx=0&ry=817&rw=6880&rh=3870&mw=800&hash=EBC267051CA904A97B40D1B6C280EFF6 800w, /~/media/Beiersdorf/blog/2026/2026-06-23-we-are-designers-of-the-skin-microbiome/Image_0_thumbnail.jpg?rx=0&ry=817&rw=6880&rh=3870&mw=1000&hash=39DDF889821C02A5438D7D66E3FAB91C 1000w, /~/media/Beiersdorf/blog/2026/2026-06-23-we-are-designers-of-the-skin-microbiome/Image_0_thumbnail.jpg?rx=0&ry=817&rw=6880&rh=3870&mw=1200&hash=BE3B0642ABB278A88433192527DAF54C 1200w' alt='' class='img' uk-img='' >
+                </figure>
+            <div class="description-teaser">
+                <div class="swipe-items">
+                    <span class="grid-arrow arrow-down"></span>
+                        <div class="type">Blog</div>
+
+                        <div class="title">Pioneering the real skin microbiome science</div>
+
+                        <div class="description">
+                            <p>
+                                <p>Our experts Dr. Benjamin Al and Tina Hamann reveal how Beiersdorf&rsquo;s microbiome expertise is shaping the skin care of tomorrow.</p>
+                            </p>
+                        </div>
+                </div>
+                <div class="static-items">
+                        <div class="tag">Research</div>
+
+                        <div class="date">6/23/2026</div>
+                </div>
+            </div>
+</a>    </article>
+                </div>
+
+            <ul class="uk-slider-nav uk-dotnav uk-flex-center"></ul>
+        </div>
+    </div>
+</section>
+    <section class="cw-cp cw-top-brands">
+        
+        <div class="cw-container">
+        <div class="cw-top-brands-header">
+                <div class="cw-h2-headline cw-h2-headline--blue">OUR ICONIC BRANDS</div>
+
+        </div>
+            <div class="cw-slider-module" uk-slider="autoplay: true; autoplay-interval: 3000">
+                <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
+                    <ul class="uk-slider-items uk-child-width-1-2@s uk-child-width-1-4@m">
+                                <li>
+<a href="/brands/nivea" class="brand-link" ><img data-src='/~/media/asset-silo/6/9/0/147a18e5585743919f9b3a7241b1a492-original.png' alt='NIVEA' mw='130' mh='130' uk-img='' ></a>                                </li>
+                                <li>
+<a href="/brands/eucerin" class="brand-link" ><img data-src='/~/media/asset-silo/c/9/9/24c9ddbadb384b58acf903b8e1668456-screen.jpg?rx=223&ry=288&rw=1039&rh=434' alt='Eucerin' mw='130' mh='130' uk-img='' ></a>                                </li>
+                                <li>
+<a href="/brands/hansaplast" class="brand-link" ><img data-src='/~/media/Beiersdorf/brands/brands/hansaplast/Beiersdorf-hansaplast-logo.png' alt='' mw='130' mh='130' uk-img='' ></a>                                </li>
+                                <li>
+<a href="/brands/la-prairie" class="brand-link" ><img data-src='/~/media/Beiersdorf/home-2019/top-brands/Beiersdorf-la-prairie-2022.jpg' alt='' mw='130' mh='130' uk-img='' ></a>                                </li>
+                                <li>
+<a href="/brands/chantecaille" class="brand-link" ><img data-src='/~/media/asset-silo/d/0/b/d9ebf4988e3f461f85635e351329c12c-original.jpg' alt='Chantecaille' mw='130' mh='130' uk-img='' ></a>                                </li>
+                    </ul>
+                    <a class="cw-slider__arrow--left uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+                    <a class="cw-slider__arrow--right uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+                </div>
+                <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
+            </div>
+        </div>
+    </section>
+<section class="cw-cp cw-share-price">
+    <div class="cw-container">
+        
+        <div class="row">
+                <div class="cw-description">
+                        <div class="title">Investor relations - Shareholder Services</div>
+            </div>
+            <div class="middle-share">
+                <div class="cw-share-price-data">
+                    <div>
+                        <div class="share">
+                            SHARE PRICE
+                        </div>
+                            <div class="date">2026-10-14 /  17:00</div>
+                    </div>
+                    <div class="cw-shape">
+                        <div class="cw-price-info">
+                                <div class="price">80.68</div>
+                                <div class="price-label">PRICE IN EUR</div>
+                                <div class="changes-label">CHANGES</div>
+                                <div class="price-changes">+ 0.98&nbsp;EUR /  + 1.23%</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+                <div class="cw-quick-links">
+                        <div class="cw-quick-link-1">
+<a href="/investor-relations/financial-reports/financial-reports-and-presentations" class="quick-link" >                                <span class="link-tagline">Financial Publication</span>
+                                <span class="link-title">Latest</span>
+                                <span class="icon cw-icon-book"></span>
+</a>                        </div>
+
+                        <div class="cw-quick-link-2">
+<a href="https://reports.beiersdorf.com/annual-report/2025/" class="quick-link" target="_blank" rel="noopener noreferrer" >                                <span class="link-tagline">Financial Publication</span>
+                                <span class="link-title">Online Annual Report</span>
+                                <span class="icon cw-icon-next"></span>
+</a>                        </div>
+                </div>
+        </div>
+    </div>
+</section>
+            
+        </main>
+        
+
+
+<footer>
+    <div class="cw-container">
+        <div class="big-logo">
+<img data-src='/~/media/Beiersdorf/components/Beiersdorf-logo-new-header.png' data-srcset='/~/media/Beiersdorf/components/Beiersdorf-logo-new-header.png?mw=210&hash=B3975ACDFF39F55AA5D6A73A44D98D2B 210w, /~/media/Beiersdorf/components/Beiersdorf-logo-new-header.png?mw=420&hash=9625C0D0B06E10B953D1A200B5F3B0A8 420w, /~/media/Beiersdorf/components/Beiersdorf-logo-new-header.png?mw=630&hash=645A289F0121127B5BE6D9ABF1C69C3D 630w' alt='' class='img' uk-img='' >        </div>
+        <div class="cw-back-to-top" uk-scroll="header">
+            <span class="arrow">
+                <span></span>
+                <span></span>
+            </span>
+            <a href="#">Back to top</a>
+        </div>
+
+        <section class="desktop row">
+            <div class="left">
+                <div class="row">
+                    
+
+
+        <ul>
+            <h4>About Beiersdorf</h4>
+                <li><a href="/about-us" title="About Us" >About Us</a></li>
+                <li><a href="/about-us/our-profile/strategy" title="Our Strategy" >Our Strategy</a></li>
+                <li><a href="/about-us/our-profile/our-leadership-team" title="Our Leadership Team" >Our Leadership Team</a></li>
+                <li><a href="https://www.beiersdorf.com/about-us/our-history/milestones" title="Our History" >Our History</a></li>
+                <li><a href="https://www.beiersdorf.com/career/locations" title="Locations" >Locations</a></li>
+        </ul>
+
+        <ul>
+            <h4>Explore & Connect</h4>
+                <li><a href="https://www.beiersdorf.com/career/overview" title="Careers at Beiersdorf" >Careers at Beiersdorf</a></li>
+                <li><a href="https://www.beiersdorf.com/brands" title="Beiersdorf Brands" >Beiersdorf Brands</a></li>
+                <li><a href="https://www.beiersdorf.com/responsibility-and-commitments/strategic-framework" title="Responsibility &amp; Commitments" >Responsibility &amp; Commitments</a></li>
+                <li><a href="/investor-relations" title="Investor Relations" >Investor Relations</a></li>
+                <li><a href="https://www.beiersdorf.com/newsroom" title="Beiersdorf News" >Beiersdorf News</a></li>
+        </ul>
+
+        <ul>
+            <h4>Legal & Support</h4>
+                <li><a href="/meta-pages/faq/overview" title="FAQ" >FAQ</a></li>
+                <li><a href="/meta-pages/contact/contact-form" title="Contact" >Contact</a></li>
+                <li><a href="/meta-pages/privacy-policy" title="Privacy Policy" >Privacy Policy</a></li>
+                <li><a href="/meta-pages/cookie-settings" title="Cookie Settings" >Cookie Settings</a></li>
+                <li><a href="/meta-pages/conditions-of-use" title="Conditions of Use" >Conditions of Use</a></li>
+                <li><a href="https://www.beiersdorf.com/investor-relations/compliance/incident-reporting-platform" title="Incident Reporting Platform" >Incident Reporting Platform</a></li>
+                <li><a href="https://www.beiersdorf.com/meta-pages/beiersdorf-fraud-notice-social-media-scam" title="Advisory: Social Media Fraud" >Advisory: Social Media Fraud</a></li>
+                <li><a href="/meta-pages/service/general-terms-and-conditions" title="General Terms and Conditions" >General Terms and Conditions</a></li>
+        </ul>
+
+                    
+    <ul class="cw-social-icons">
+            <h4>Follow us</h4>
+
+                <li>
+<a href="https://www.linkedin.com/company/beiersdorf" target="_blank" rel="noopener noreferrer" >                        <span class="fab fa-linkedin-in cw-social-icon"></span>
+</a>                </li>
+                <li>
+<a href="https://www.instagram.com/beiersdorf/" target="_blank" rel="noopener noreferrer" >                        <span class="fab fa-instagram cw-social-icon"></span>
+</a>                </li>
+                <li>
+<a href="https://www.youtube.com/BeiersdorfChannel" target="_blank" rel="noopener noreferrer" >                        <span class="fab fa-youtube cw-social-icon"></span>
+</a>                </li>
+    </ul>
+
+                </div>
+            </div>
+            <div class="right">
+
+                <div>
+                    <h4>Beiersdorf Global</h4>
+
+<a href="/about-us/locations/global-presence" class="map" aria-label="World Map" ><img data-src='/~/media/Beiersdorf/components/Beiersdorf-map-footer-new.png' data-srcset='/~/media/Beiersdorf/components/Beiersdorf-map-footer-new.png?mw=135&hash=85646D23C64B0E5889F6E64067EA72BD 135w, /~/media/Beiersdorf/components/Beiersdorf-map-footer-new.png?mw=270&hash=9FE1BBD7E9580E7629F84E8E0B8D24F9 270w' alt='' class='img' uk-img='' ><!-- Widths 405 too large for the selected image --></a>                </div>
+            </div>
+        </section>
+
+        <section class="mobile">
+            <div>
+                
+
+
+        <ul>
+            <h4>About Beiersdorf</h4>
+                <li><a href="/about-us" title="About Us" >About Us</a></li>
+                <li><a href="/about-us/our-profile/strategy" title="Our Strategy" >Our Strategy</a></li>
+                <li><a href="/about-us/our-profile/our-leadership-team" title="Our Leadership Team" >Our Leadership Team</a></li>
+                <li><a href="https://www.beiersdorf.com/about-us/our-history/milestones" title="Our History" >Our History</a></li>
+                <li><a href="https://www.beiersdorf.com/career/locations" title="Locations" >Locations</a></li>
+        </ul>
+
+        <ul>
+            <h4>Explore & Connect</h4>
+                <li><a href="https://www.beiersdorf.com/career/overview" title="Careers at Beiersdorf" >Careers at Beiersdorf</a></li>
+                <li><a href="https://www.beiersdorf.com/brands" title="Beiersdorf Brands" >Beiersdorf Brands</a></li>
+                <li><a href="https://www.beiersdorf.com/responsibility-and-commitments/strategic-framework" title="Responsibility &amp; Commitments" >Responsibility &amp; Commitments</a></li>
+                <li><a href="/investor-relations" title="Investor Relations" >Investor Relations</a></li>
+                <li><a href="https://www.beiersdorf.com/newsroom" title="Beiersdorf News" >Beiersdorf News</a></li>
+        </ul>
+
+        <ul>
+            <h4>Legal & Support</h4>
+                <li><a href="/meta-pages/faq/overview" title="FAQ" >FAQ</a></li>
+                <li><a href="/meta-pages/contact/contact-form" title="Contact" >Contact</a></li>
+                <li><a href="/meta-pages/privacy-policy" title="Privacy Policy" >Privacy Policy</a></li>
+                <li><a href="/meta-pages/cookie-settings" title="Cookie Settings" >Cookie Settings</a></li>
+                <li><a href="/meta-pages/conditions-of-use" title="Conditions of Use" >Conditions of Use</a></li>
+                <li><a href="https://www.beiersdorf.com/investor-relations/compliance/incident-reporting-platform" title="Incident Reporting Platform" >Incident Reporting Platform</a></li>
+                <li><a href="https://www.beiersdorf.com/meta-pages/beiersdorf-fraud-notice-social-media-scam" title="Advisory: Social Media Fraud" >Advisory: Social Media Fraud</a></li>
+                <li><a href="/meta-pages/service/general-terms-and-conditions" title="General Terms and Conditions" >General Terms and Conditions</a></li>
+        </ul>
+
+                
+    <ul class="cw-social-icons">
+            <h4>Follow us</h4>
+
+                <li>
+<a href="https://www.linkedin.com/company/beiersdorf" target="_blank" rel="noopener noreferrer" >                        <span class="fab fa-linkedin-in cw-social-icon"></span>
+</a>                </li>
+                <li>
+<a href="https://www.instagram.com/beiersdorf/" target="_blank" rel="noopener noreferrer" >                        <span class="fab fa-instagram cw-social-icon"></span>
+</a>                </li>
+                <li>
+<a href="https://www.youtube.com/BeiersdorfChannel" target="_blank" rel="noopener noreferrer" >                        <span class="fab fa-youtube cw-social-icon"></span>
+</a>                </li>
+    </ul>
+
+                <div class="cw-footer-map">
+                    <h4>Beiersdorf Global</h4>
+
+<a href="/about-us/locations/global-presence" class="map" aria-label="World Map" ></a>                </div>
+            </div>
+        </section>
+    </div>
+</footer>
+
+        
+        
+    </div>
+    <script src=/dist/uikit/js/uikit.min.js?202508191712 defer></script>
+    <script src=/dist/bdfcw/application.js?202607211206 defer></script>
+</body>
+</html>

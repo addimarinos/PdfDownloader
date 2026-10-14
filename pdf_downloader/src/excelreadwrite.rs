@@ -28,7 +28,7 @@ pub fn parse_file(path: &Path) -> Result<Vec<UrlRecord>, Box<dyn Error>> {
         let info = UrlRecord {
             id: id,
             url: url,
-            alturl: alt,
+            alturl: Some(alt),
             status: false //row[3].as_bool().is_some_and(|x| x == true)
         };
 
