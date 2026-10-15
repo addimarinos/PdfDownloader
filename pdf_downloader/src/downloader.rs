@@ -1,43 +1,15 @@
 use crate::structs::UrlRecord;
-use async_downloader::{Downloader, Job, Progress, BatchProgress, Settings, Threads};
-use reqwest::{Client, Response};
+use reqwest::{Client, Response, header::{ACCEPT, ACCEPT_ENCODING, HeaderValue, USER_AGENT}};
 use tokio::{fs::File, io::{AsyncBufReadExt, AsyncWriteExt}};
 use std::{path::{Path, PathBuf}, time::Duration};
 use futures_util::{StreamExt, join, stream};
 
 enum DownloadResult {
     Success,
+    AltSuccess,
     NoResponse,
     NoFileBytes, 
 
-}
-
-
-pub async fn download_url(urls: Vec<UrlRecord>) -> bool {
-
-    let output_path = Path::new("downloads");
-    let mut batch_list: Vec<Job> = vec![];
-    for record in urls.iter(){
-        batch_list.push(Job::new(record.url.to_string(), output_path));
-    }
-    
-    let downloader = Downloader::new(Settings {
-        threads: Threads::Auto,
-        max_concurrent: 4
-    })
-    .expect("runtime");
-
-    let batch = downloader.enqueue_batch(batch_list);
-
-    let p = batch.progress();
-    println!("{}/{} files", p.done, p.files);
-    
-    /* let BatchProgress { files, done, failed, cancelled, bytes_received, bytes_total, speed } = batch.progress() {
-        println!("Files: {files} - Done: {done:?} - Failed: {failed} - Cancelled: {cancelled}");
-        println!("Bytes received: {bytes_received} / Total: {bytes_total:?} - Speed: {speed}");
-    } */
-
-    return false;
 }
 
 pub async fn download_all(all_records: Vec<UrlRecord>) -> Result<(), Box<dyn std::error::Error>> {
@@ -46,6 +18,7 @@ pub async fn download_all(all_records: Vec<UrlRecord>) -> Result<(), Box<dyn std
         .build()?;
 
     let output_dir = Path::new("downloads/").to_path_buf();
+    tokio::fs::remove_dir_all(&output_dir).await?;
     tokio::fs::create_dir_all(&output_dir).await?;
 
     // try downloading one file
@@ -66,28 +39,55 @@ pub async fn download_all(all_records: Vec<UrlRecord>) -> Result<(), Box<dyn std
 }
 
 pub async fn download_file(
-    record: UrlRecord, 
+    mut record: UrlRecord, 
     output_dir: &Path, 
     client: &reqwest::Client
-) -> Result<(), Box<dyn std::error::Error + Send + Sync>> {
-
-    let url = "https://www.novonordisk.com/content/dam/nncorp/global/en/investors/irmaterial/annual_report/2025/novo-nordisk-annual-report-2024.pdfst";
+) -> Result<UrlRecord, Box<dyn std::error::Error + Send + Sync>> {
     
     let id = record.id;
-    let main_url = record.url;
-    let alt_url = record.alturl;
-    println!("Trying to Download: {} ", main_url);
+    
+    let mut urls: Vec<&str> = vec![record.url.as_str()];
+    if let Some(alt_url) = record.alturl.as_deref() {
+            println!("adding alt url for id {} : {}", id, alt_url);
+            urls.push(alt_url);
+    }
 
-    let file_path = output_dir.join(format!("{}.pdf", record.id));
+    let file_path = output_dir.join(format!("{}.pdf", id));
+    
+    // lets build the header
+    let mut headers = reqwest::header::HeaderMap::new();
+    let src_user_agent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:157.0) Gecko/20100101 Firefox/157.0";
+    let src_accept = "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8";
+    let src_accept_encoding = "gzip, deflate, br, zstd";
+    headers.insert(USER_AGENT, HeaderValue::from_static(src_user_agent));
+    headers.insert(ACCEPT, HeaderValue::from_static(src_accept));
+    headers.insert(ACCEPT_ENCODING, HeaderValue::from_static(src_accept_encoding));
 
-    let response = client.get(&main_url)
-        .send()
-        .await?
-        .error_for_status()?;
 
-    let content = response.bytes().await?;
 
-    let mut file = tokio::fs::File::create(&file_path).await?;
-    file.write_all(&content).await?;
-    Ok(())
+
+    for url in urls {
+        let response = match client.get(url)
+            .headers(headers.clone())
+            .send()
+            .await?
+            .error_for_status() {
+                Ok(res) => {
+                    println!("No problem fetching pdf with id {}", id);
+                    let content = res.bytes().await?;
+                    let mut file = tokio::fs::File::create(&file_path).await?;
+                    file.write_all(&content).await?;
+                    record.status = true;
+                    //break;
+                }
+                Err(err) => {
+                    println!("Error fetching pdf with id {}: {}", id, err);
+                    println!("request for id {} : {:?}", id, err.status());
+                    record.status = false;
+                } 
+            };
+            
+        }
+    
+    Ok(record)
 }

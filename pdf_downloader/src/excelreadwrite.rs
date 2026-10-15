@@ -20,15 +20,19 @@ pub fn parse_file(path: &Path) -> Result<Vec<UrlRecord>, Box<dyn Error>> {
         println!("Row: {:?}", row);
         let id = row[0].as_i64().unwrap();
         let url = row[1].as_string();
-        let mut alt = "".to_string();
-        if row.len() > 2 {
-            alt = row[2].to_string();
+        let mut alt = None;
+        if let Some(cell) = row.get(2) {
+            let value = cell.to_string();
+            let value = value.trim();
+            if !value.is_empty() {
+                alt = Some(value.to_string());
+            }
         }
 
         let info = UrlRecord {
             id: id,
             url: url,
-            alturl: Some(alt),
+            alturl: alt,
             status: false //row[3].as_bool().is_some_and(|x| x == true)
         };
 
