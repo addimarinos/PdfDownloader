@@ -2,8 +2,6 @@ use excelstream::streaming_reader::StreamingReader;
 use excelstream::{CellValue, ExcelReader};
 use std::error::Error;
 use std::path::Path;    
-
-
 use crate::structs::UrlRecord;
 
 
@@ -17,7 +15,6 @@ pub fn parse_file(path: &Path) -> Result<Vec<UrlRecord>, Box<dyn Error>> {
 
     for row_result in reader.stream_rows("Sheet1")?.skip(1) {
         let row = row_result?;
-        println!("Row: {:?}", row);
         let id = row[0].as_i64().unwrap();
         let url = row[1].as_string();
         let mut alt = None;
@@ -41,4 +38,12 @@ pub fn parse_file(path: &Path) -> Result<Vec<UrlRecord>, Box<dyn Error>> {
     println!("Length of urls vector: {:?}", _urls.len());
 
     Ok(_urls)
+}
+
+
+pub async fn write_results_to_file(all_records: Vec<UrlRecord>, path: &Path) -> Result<(), Box<dyn Error>> {
+    
+    
+    
+    Ok(())
 }

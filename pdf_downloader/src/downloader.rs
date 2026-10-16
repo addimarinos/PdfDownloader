@@ -1,8 +1,9 @@
 use crate::structs::UrlRecord;
+use office::Error;
 use reqwest::{Client, Response, header::{ACCEPT, ACCEPT_ENCODING, HeaderValue, USER_AGENT}};
 use tokio::{fs::File, io::{AsyncBufReadExt, AsyncWriteExt}};
-use std::{path::{Path, PathBuf}, time::Duration};
-use futures_util::{StreamExt, join, stream};
+use std::{io::ErrorKind::InvalidData, path::{Path, PathBuf}, time::Duration};
+use futures_util::{StreamExt, join, stream::{self, Collect}};
 
 enum DownloadResult {
     Success,
@@ -12,7 +13,7 @@ enum DownloadResult {
 
 }
 
-pub async fn download_all(all_records: Vec<UrlRecord>) -> Result<(), Box<dyn std::error::Error>> {
+pub async fn download_all(all_records: Vec<UrlRecord>) -> Result<Vec<UrlRecord>, Box<dyn std::error::Error>> {
     let client = Client::builder()
         .connect_timeout(Duration::from_secs(15))
         .build()?;
@@ -20,35 +21,51 @@ pub async fn download_all(all_records: Vec<UrlRecord>) -> Result<(), Box<dyn std
     let output_dir = Path::new("downloads/").to_path_buf();
     tokio::fs::remove_dir_all(&output_dir).await?;
     tokio::fs::create_dir_all(&output_dir).await?;
+    
+    let start = std::time::Instant::now();
 
     // try downloading one file
-    let mut record = stream::iter(all_records.into_iter().map(|rec| {
+    let updated_records = stream::iter(all_records.into_iter().map(|rec| {
         let client = client.clone();
         let output_dir = output_dir.clone();
 
         async move {
             download_file(rec, &output_dir, &client).await
         }
-    })).buffer_unordered(10).collect::<Vec<_>>().await;
+    })).buffer_unordered(20).collect::<Vec<_>>().await;
 
+    
+    println!("Time it took: {} secs", start.elapsed().as_secs());
+    println!("Lets look at the resulting updated vector");
+    
 
+    let  count_downl_records = updated_records
+        .iter()
+        .filter(|record| record.status)
+        .count();
+    println!("Downloaded files: {} / {}", count_downl_records, updated_records.len());
+    println!("Failed to download the following records:");
+    let  failed_downl_records = updated_records
+        .iter()
+        .filter(|record| !record.status);
+    for rec in failed_downl_records {
+        println!("id: {} | status {}", rec.id, rec.status);
+    }
 
-    //let mut records = stream::iter(all_records.into_iter())
-
-    Ok(())
+    Ok(updated_records)
 }
 
 pub async fn download_file(
     mut record: UrlRecord, 
     output_dir: &Path, 
     client: &reqwest::Client
-) -> Result<UrlRecord, Box<dyn std::error::Error + Send + Sync>> {
+) -> UrlRecord { //Result<UrlRecord, Box<dyn std::error::Error + Send + Sync>> {
     
     let id = record.id;
     
     let mut urls: Vec<&str> = vec![record.url.as_str()];
     if let Some(alt_url) = record.alturl.as_deref() {
-            println!("adding alt url for id {} : {}", id, alt_url);
+            //println!("adding alt url for id {} : {}", id, alt_url);
             urls.push(alt_url);
     }
 
@@ -67,7 +84,44 @@ pub async fn download_file(
 
 
     for url in urls {
-        let response = match client.get(url)
+        let response = client.get(url)
+            .headers(headers.clone())
+            .send()
+            .await; 
+        
+        match response {
+            Ok(res) if res.status() == reqwest::StatusCode::FORBIDDEN => {
+                    println!("403Response headers for id {} : {:#?}", id, res.headers());
+                }
+            Ok(res) => {
+                match res.error_for_status() {
+                    
+                    Ok(res) => {
+                        //println!("No problem fetching pdf with id {}", id);
+                        /* let content = res.bytes().await.unwrap();
+                        let mut file = tokio::fs::File::create(&file_path).await.unwrap();
+                        file.write_all(&content).await; */
+                        match write_file(res, &file_path).await {
+                            Ok(_res) => {
+                                record.status = true;
+                            }
+                            Err(err) => {
+                                println!("Failed to write file with id {} and Error: {}", id, err);
+                            }
+                        }
+                        break;
+                    }
+                    Err(err) => {
+                        println!("Error downloading file with id {} : {}", id, err);
+                    }
+                }
+            }
+            Err(err) => {
+                println!("Network error - sending request failed for id {} : {}", id, err);
+            }
+        }
+
+        /* let response = match client.get(url)
             .headers(headers.clone())
             .send()
             .await?
@@ -78,16 +132,55 @@ pub async fn download_file(
                     let mut file = tokio::fs::File::create(&file_path).await?;
                     file.write_all(&content).await?;
                     record.status = true;
-                    //break;
+                    break;
                 }
                 Err(err) => {
                     println!("Error fetching pdf with id {}: {}", id, err);
                     println!("request for id {} : {:?}", id, err.status());
                     record.status = false;
                 } 
-            };
-            
-        }
+            }; */
+    }
     
-    Ok(record)
+    record
+}
+
+async fn write_file(response: Response, file_path: &PathBuf) -> Result<(), Box<dyn std::error::Error + Send + Sync>> {
+    
+    match response.bytes().await {
+        /* Ok(content) if content.is_empty() => {
+            Err("content is empty");
+        } */
+        Ok(content)
+            if content[..content.len().min(1024)]
+                .windows(5)
+                .any(|w| w == b"%PDF-") => {
+            match tokio::fs::File::create(file_path).await {
+                Ok(mut file) => {
+                    match file.write_all(&content).await {
+                        Ok(_res) => {
+                            println!("Successfully wrote content to file in path : {:?}", file_path);
+                            file.flush().await?;
+                        }
+                        Err(err) => {
+                            file.flush().await?;
+                            println!("Failed to write content to file in path : {:?} | Error: {}", file_path, err);
+                        }
+                    }
+                }
+                Err(err) => {
+                    println!("Failed to create file with path: {:?} | Error: {}", file_path, err);
+                }
+            }
+        }
+        Ok(content) => {
+            println!(" might not be a pdf ?");
+            println!("The first 5 bytes does not match pdf signature: {:?}", &content[..content.len().min(5)]);
+            return Err(std::io::Error::new(InvalidData, "PDF signature not found").into());
+        }
+        Err(err) => {
+            println!("Failed reading content from file with Error: {}", err);
+        }
+    }
+    Ok(())
 }

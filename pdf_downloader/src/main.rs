@@ -20,7 +20,7 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
         .join("testfile.xlsx");
     
 
-    let mut all_records = parse_file(&test_path)
+    let mut all_records = parse_file(&input_path)
         .expect("Excel parsing failed");
 
     println!("Found {:} rows in excel file.", all_records.len());    
