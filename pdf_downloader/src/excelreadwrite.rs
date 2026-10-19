@@ -1,12 +1,17 @@
 use excelstream::streaming_reader::StreamingReader;
-use excelstream::{CellValue, ExcelReader};
+use excelstream::{Cell, CellStyle, CellValue, ExcelReader, ExcelWriter, writer};
+use futures_util::stream::Filter;
+use futures_util::{StreamExt, join, stream::{self, Collect}};
 use std::error::Error;
 use std::path::Path;    
+
+use rust_xlsxwriter::{FormatAlign, Format, Workbook, XlsxError};
+
 use crate::structs::UrlRecord;
 
 
 
-pub fn parse_file(path: &Path) -> Result<Vec<UrlRecord>, Box<dyn Error>> {
+pub fn parse_file(path: &Path, reset: bool) -> Result<Vec<UrlRecord>, Box<dyn Error>> {
 
     //let mut rows: [Vec<CellValue>];
     let mut _urls: Vec<UrlRecord> = vec![];
@@ -25,12 +30,19 @@ pub fn parse_file(path: &Path) -> Result<Vec<UrlRecord>, Box<dyn Error>> {
                 alt = Some(value.to_string());
             }
         }
+        let mut status = false;
+        if let Some(cell) = row.get(3) && !reset {
+            let downl = cell.as_bool();
+            if !downl.is_none() {
+                status = downl.unwrap();
+            }
+        }
 
         let info = UrlRecord {
             id: id,
             url: url,
             alturl: alt,
-            status: false //row[3].as_bool().is_some_and(|x| x == true)
+            status: status //row[3].as_bool().is_some_and(|x| x == true)
         };
 
         _urls.push(info);
@@ -40,10 +52,33 @@ pub fn parse_file(path: &Path) -> Result<Vec<UrlRecord>, Box<dyn Error>> {
     Ok(_urls)
 }
 
+pub fn write_to_excel(mut all_records: Vec<UrlRecord>, path: &Path) -> Result<(), Box<dyn Error>> {
+    let file_path = path.join("blegh.xlsx");
+    let mut workbook = Workbook::new();
 
-pub async fn write_results_to_file(all_records: Vec<UrlRecord>, path: &Path) -> Result<(), Box<dyn Error>> {
+    let worksheet = workbook.add_worksheet();
+    worksheet.set_column_width(0, 5)?;
+    worksheet.set_column_width(1, 60)?;
+    worksheet.set_column_width(2, 60)?;
+    worksheet.set_column_width(3, 12)?;
+    let wrap_format = Format::new().set_text_wrap();
+    let center_format = Format::new().set_align(FormatAlign::Center);
+
+    let header = ["id", "url", "alt url", "downloaded?"];
+    all_records.sort_by_key(|r|r.id.clone());
     
+    worksheet.write_row_with_format(0,0 ,header, &center_format)?;
+    let mut row_idx = 1;
+    for rec in all_records {
+        worksheet.write(row_idx, 0, rec.id)?;
+        worksheet.write_string_with_format(row_idx, 1, rec.url, &wrap_format)?;
+        worksheet.write_string_with_format(row_idx, 2, rec.alturl.unwrap_or_default(), &wrap_format)?;
+        worksheet.write_boolean(row_idx, 3, rec.status)?;
+        row_idx += 1;
+    }
     
+
+    workbook.save(file_path)?;
     
     Ok(())
 }

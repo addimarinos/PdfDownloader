@@ -1,14 +1,13 @@
 use std::path::Path;
-use tokio::io::AsyncWrite;
-use reqwest;
 
 mod structs;
-use structs::UrlRecord;
 mod excelreadwrite;
-use excelreadwrite::parse_file;
+use clap::Parser;
+use excelreadwrite::{parse_file, write_to_excel};
 mod downloader;
-
-use crate::downloader::{download_all, download_file};
+use crate::downloader::download_all;
+mod cli;
+use cli::Cli;
 
 #[tokio::main]
 async fn main() -> Result<(), Box<dyn std::error::Error>> {
@@ -18,23 +17,33 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
     let test_path = Path::new("src")
         .join("input")
         .join("testfile.xlsx");
+    //let reset = false;
     
+    let cli = Cli::parse();
 
-    let mut all_records = parse_file(&input_path)
+    let path = cli.path;
+    let reset = cli.reset;
+    println!("reset input: {}", reset);
+
+    let cli_input_file = Path::new(&path);
+
+
+    let mut all_records = parse_file(&cli_input_file, reset)
         .expect("Excel parsing failed");
 
     println!("Found {:} rows in excel file.", all_records.len());    
     
     println!("Starting downloads...");
-    //let _result = download_url(_res).await;
-    let _response = download_all(all_records).await?;
+    let downloads_records = download_all(all_records).await?;
     
     println!("Done dowloading files.");
-    println!("Lets look at the records...");
-    /* for record in all_records {
-        println!("Status of pdf with id {}: ", record.id);
-
-    } */
+    println!("Lets write to file");
+    let output_path = Path::new("output/");
+    if tokio::fs::try_exists(output_path).await? {
+        tokio::fs::remove_dir_all(output_path).await?;
+    }
+    tokio::fs::create_dir_all(&output_path).await?;
+    let other_res = write_to_excel(downloads_records, &output_path)?;
 
     Ok(())
 }

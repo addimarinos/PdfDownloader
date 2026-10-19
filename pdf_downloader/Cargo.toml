@@ -5,10 +5,13 @@ edition = "2024"
 
 [dependencies]
 async_downloader = "0.1.0"
+clap = { version = "4.6.7", features = ["derive"] }
 excelstream = "0.20.2"
 futures-util = "0.3.34"
+log = "0.4.34"
 office = "0.8.1"
-reqwest = "0.13.5"
+reqwest = { version = "0.13.5", features = ["brotli", "deflate", "gzip", "zstd"] }
+rust_xlsxwriter = "0.100.0"
 tokio = { version = "1.53.3", features = ["fs", "io-util", "macros", "rt-multi-thread"] }
 
 [dev-dependencies]
