@@ -15,7 +15,9 @@ pub fn parse_file(path: &Path, reset: bool) -> Result<Vec<UrlRecord>, Box<dyn Er
     let mut reader = StreamingReader::open(path)
         .expect("Failed to open excel file");
 
-    for row_result in reader.stream_rows("Sheet1")?.skip(1) {
+    let worksheets = reader.sheet_names();
+
+    for row_result in reader.stream_rows(worksheets[0].as_str())?.skip(1) {
         let row = row_result?;
         let id = row[0].as_i64().unwrap();
         let url = row[1].as_string();
