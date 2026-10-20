@@ -11,13 +11,13 @@ use cli::Cli;
 
 #[tokio::main]
 async fn main() -> Result<(), Box<dyn std::error::Error>> {
-    let input_path = Path::new("src")
+    /* let input_path = Path::new("src")
         .join("input")
         .join("GRI_2017_2025.xlsx");
     let test_path = Path::new("src")
         .join("input")
-        .join("testfile.xlsx");
-    //let reset = false;
+        .join("testfile.xlsx"); */
+
     
     let cli = Cli::parse();
 
@@ -28,7 +28,7 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
     let cli_input_file = Path::new(&path);
 
 
-    let mut all_records = parse_file(&cli_input_file, reset)
+    let all_records = parse_file(&cli_input_file, reset)
         .expect("Excel parsing failed");
 
     println!("Found {:} rows in excel file.", all_records.len());    
@@ -39,11 +39,11 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
     println!("Done dowloading files.");
     println!("Lets write to file");
     let output_path = Path::new("output/");
-    if tokio::fs::try_exists(output_path).await? {
-        tokio::fs::remove_dir_all(output_path).await?;
+    if !tokio::fs::try_exists(output_path).await? {
+        tokio::fs::create_dir_all(&output_path).await?;
     }
-    tokio::fs::create_dir_all(&output_path).await?;
-    let other_res = write_to_excel(downloads_records, &output_path)?;
+    let _other_res = write_to_excel(downloads_records, &output_path)?;
 
+    println!("Downloads complete!");
     Ok(())
 }

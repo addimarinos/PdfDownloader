@@ -1,17 +1,11 @@
 use crate::structs::UrlRecord;
 use log::{info, warn};
-use reqwest::{Client, Response, header::{ACCEPT, ACCEPT_ENCODING, HeaderValue, USER_AGENT}};
-use tokio::{fs::File, io::{AsyncBufReadExt, AsyncWriteExt}};
-use std::{io::ErrorKind::InvalidData, path::{Path, PathBuf}, time::Duration};
-use futures_util::{StreamExt, join, stream::{self, Collect}};
+use reqwest::{Client, Response, header::{ACCEPT, HeaderValue, USER_AGENT}};
+use tokio::io::AsyncWriteExt;
+use std::{io::ErrorKind::{InvalidData, InvalidFilename}, path::{Path, PathBuf}, time::Duration};
+use futures_util::{StreamExt, stream::self};
 
-enum DownloadResult {
-    Success,
-    AltSuccess,
-    NoResponse,
-    NoFileBytes, 
 
-}
 
 pub async fn download_all(all_records: Vec<UrlRecord>) -> Result<Vec<UrlRecord>, Box<dyn std::error::Error>> {
     let client = Client::builder()
@@ -19,14 +13,13 @@ pub async fn download_all(all_records: Vec<UrlRecord>) -> Result<Vec<UrlRecord>,
         .build()?;
 
     let output_dir = Path::new("downloads/").to_path_buf();
-    if tokio::fs::try_exists(&output_dir).await? {
-        tokio::fs::remove_dir_all(&output_dir).await?;
+    if !tokio::fs::try_exists(&output_dir).await? {
+        tokio::fs::create_dir_all(&output_dir).await?;
+        //tokio::fs::remove_dir_all(&output_dir).await?;
     }
-    tokio::fs::create_dir_all(&output_dir).await?;
     
     let start = std::time::Instant::now();
 
-    // try downloading one file
     let updated_records = stream::iter(all_records.into_iter().map(|rec| {
         let client = client.clone();
         let output_dir = output_dir.clone();
@@ -145,21 +138,27 @@ async fn write_file(response: Response, file_path: &PathBuf) -> Result<(), Box<d
                         Err(err) => {
                             file.flush().await?;
                             warn!("Failed to write content to file in path : {:?} | Error: {}", file_path, err);
+                            return Err(std::io::Error::new( InvalidData, "Failed to write content to file").into());
+
                         }
                     }
                 }
                 Err(err) => {
                     warn!("Failed to create file with path: {:?} | Error: {}", file_path, err);
+                    return Err(std::io::Error::new( InvalidFilename, "Failed to create file in given path").into());
+
                 }
             }
         }
-        Ok(content) => {
+        Ok(_content) => {
             //println!(" might not be a pdf ?");
+            warn!("Pdf signature not found in first 1024 bytes of content");
             //println!("The first 5 bytes does not match pdf signature: {:?}", &content[..content.len().min(5)]);
-            return Err(std::io::Error::new(InvalidData, "PDF signature not found").into());
+            return Err(std::io::Error::new(InvalidData, "PDF signature not found, possibly not a pdf").into());
         }
         Err(err) => {
             warn!("Failed reading content from file with Error: {}", err);
+            return Err(std::io::Error::new(InvalidData, "Failed reading content from file").into())
         }
     }
     Ok(())

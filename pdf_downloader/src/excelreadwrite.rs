@@ -1,7 +1,4 @@
 use excelstream::streaming_reader::StreamingReader;
-use excelstream::{Cell, CellStyle, CellValue, ExcelReader, ExcelWriter, writer};
-use futures_util::stream::Filter;
-use futures_util::{StreamExt, join, stream::{self, Collect}};
 use std::error::Error;
 use std::path::Path;    
 
@@ -30,6 +27,7 @@ pub fn parse_file(path: &Path, reset: bool) -> Result<Vec<UrlRecord>, Box<dyn Er
                 alt = Some(value.to_string());
             }
         }
+        
         let mut status = false;
         if let Some(cell) = row.get(3) && !reset {
             let downl = cell.as_bool();
@@ -42,7 +40,7 @@ pub fn parse_file(path: &Path, reset: bool) -> Result<Vec<UrlRecord>, Box<dyn Er
             id: id,
             url: url,
             alturl: alt,
-            status: status //row[3].as_bool().is_some_and(|x| x == true)
+            status: status 
         };
 
         _urls.push(info);
