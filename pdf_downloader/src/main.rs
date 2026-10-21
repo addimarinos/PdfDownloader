@@ -11,19 +11,10 @@ use cli::Cli;
 
 #[tokio::main]
 async fn main() -> Result<(), Box<dyn std::error::Error>> {
-    /* let input_path = Path::new("src")
-        .join("input")
-        .join("GRI_2017_2025.xlsx");
-    let test_path = Path::new("src")
-        .join("input")
-        .join("testfile.xlsx"); */
-
-    
     let cli = Cli::parse();
 
     let path = cli.path;
     let reset = cli.reset;
-    println!("reset input: {}", reset);
 
     let cli_input_file = Path::new(&path);
 
@@ -33,7 +24,7 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
 
     println!("Found {:} rows in excel file.", all_records.len());    
     
-    println!("Starting downloads...");
+    println!("downloading files...");
     let downloads_records = download_all(all_records).await?;
     
     println!("Done dowloading files.");
@@ -44,6 +35,6 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
     }
     let _other_res = write_to_excel(downloads_records, &output_path)?;
 
-    println!("Downloads complete!");
+    println!("Process complete!");
     Ok(())
 }

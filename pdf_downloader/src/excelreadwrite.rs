@@ -53,7 +53,7 @@ pub fn parse_file(path: &Path, reset: bool) -> Result<Vec<UrlRecord>, Box<dyn Er
 }
 
 pub fn write_to_excel(mut all_records: Vec<UrlRecord>, path: &Path) -> Result<(), Box<dyn Error>> {
-    let file_path = path.join("blegh.xlsx");
+    let file_path = path.join("result.xlsx");
     let mut workbook = Workbook::new();
 
     let worksheet = workbook.add_worksheet();
