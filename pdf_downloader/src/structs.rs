@@ -6,4 +6,10 @@ pub struct UrlRecord {
     pub status: bool
 }
 
+enum DownloadResult {
+    Success,
+    AltSuccess,
+    NoResponse,
+    NoFileBytes, 
 
+}
